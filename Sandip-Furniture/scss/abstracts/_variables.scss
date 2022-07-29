@@ -1,0 +1,50 @@
+// *** COLORS ***
+
+
+// primary
+$clr-primary--400: #faab4b;
+
+// secondary
+$clr-secondary--400: #6b6b6b;
+$clr-secondary--600: #2e2e2e;
+
+// light
+$clr-light--100: #ffffff;
+$clr-light--200: #f1f1f5;
+
+// dark
+$clr-dark--200: #c8c8c8;
+$clr-dark--400: #868686;
+$clr-dark--600: #7b8099;
+$clr-dark--800: #333333;
+$clr-dark--900: #000006;
+
+
+// *** END COLORS ***
+
+
+// Root - COLORS
+$colors: (
+    primary: (
+        100: #e5f1fd,
+    ),
+    secondary: (
+        100: #e5f1fd,
+    ),
+    light: (
+        100: #e5f1fd,
+    ),
+    dark: (
+        100: #888,
+    ),
+);
+
+:root {
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+}
+
+// END COLORS

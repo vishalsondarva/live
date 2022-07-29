@@ -1,0 +1,74 @@
+.sc_title_wrap{
+    margin-bottom: 2.5rem;
+    @include size(max-767){
+        margin-bottom: 1.5rem;
+    }
+    @include headings{
+        margin-bottom: 0.75em;
+        line-height: 1;
+        small{
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: $clr-primary--400;
+            margin-bottom: 0.5em;
+            @include size(max-1560){
+                font-size: 1.125rem;
+            }
+            @include size(max-1200){
+                font-size: 1rem;
+            }
+            @include size(max-991){
+                font-size: 0.875rem;
+            }
+            @include size(max-767){
+                font-size: 0.75rem;
+            }
+        }
+        strong{
+            display: block;
+            font-size: 3.4375rem;
+            font-weight: 400;
+            @include size(max-1560){
+                font-size: 2.5rem;
+            }
+            @include size(max-1200){
+                font-size: 2rem;
+            }
+            @include size(max-991){
+                font-size: 1.5rem;
+            }
+            @include size(max-767){
+                font-size: 1.35rem;
+            }
+        }
+        position: relative;
+        &::after{
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: $clr-primary--400;
+            display: inline-block;
+            @include size(max-1200){
+                width: 80px;
+            }
+            @include size(max-767){
+                width: 60px;
+            }
+        }
+    }
+    p{
+        font-size: 1.25rem;
+        margin-bottom: 0.75em;
+        @include size(max-1560){
+            font-size: 1.125rem;
+        }
+        @include size(max-1200){
+            font-size: 1rem;
+        }
+        strong{
+            color: $clr-primary--400;
+            font-weight: 500;
+        }
+    }
+}

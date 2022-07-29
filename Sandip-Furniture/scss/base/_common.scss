@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+    &::selection {
+        background: $clr-primary--400;
+        color: white;
+    }
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: auto;
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Minion Pro", sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
+        background-color: white;
+        color: #000006;
+        width: 100%;
+        overflow-x: hidden;
+        min-width: 360px;
+        line-height: normal;
+        &.oveHidden{
+            overflow: hidden;
+        }
+        .body_wrap {
+            width: 100%;
+            overflow: hidden;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Trajan Pro Regular";
+            line-height: normal;
+            font-weight: 400;
+            color: $clr-dark--900;
+        }
+    }
+}
+
+.bg_lightGray {
+    background-color: #f9fafa;
+}
+
+.py-4,
+.py-5 {
+    @include size(max-991) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    @include size(max-767) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+.pt-5 {
+    @include size(max-991) {
+        padding-top: 4rem;
+    }
+    @include size(max-767) {
+        padding-top: 3rem;
+    }
+}
+
+
+.loader_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    .loader_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .loader {
+        width: 50px;
+        height: 50px;
+        border: 2px solid $clr-dark--900;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+      .loader::after {
+          content: '';  
+        box-sizing: border-box;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 4px solid transparent;
+          border-bottom-color: $clr-primary--400;
+      }
+          
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      } 
+}

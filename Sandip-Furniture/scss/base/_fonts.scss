@@ -1,0 +1,44 @@
+// MinionProRegular
+@font-face {
+    font-family: "Minion Pro";
+    src: url("../fonts/Minion-Pro/MinionPro-Regular.woff2") format("woff2"),
+        url("../fonts/Minion-Pro/MinionPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Minion Pro";
+    src: url("../fonts/Minion-Pro/MinionPro-Medium.woff2") format("woff2"),
+        url("../fonts/Minion-Pro/MinionPro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Minion Pro";
+    src: url("../fonts/Minion-Pro/MinionPro-Semibold.woff2") format("woff2"),
+         url("../fonts/Minion-Pro/MinionPro-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.MinionPro_font {
+    font-family: "Minion Pro" sans-serif;
+}
+
+// TrajanPro
+@font-face {
+    font-family: "Trajan Pro Regular";
+    src: url("../fonts/trajan-pro/TrajanPro-Regular.woff2") format("woff2"),
+        url("../fonts/trajan-pro/TrajanPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.TrajanPro_font {
+    font-family: "Trajan Pro Regular";
+}

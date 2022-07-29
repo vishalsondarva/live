@@ -1,0 +1,144 @@
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    user-select: none;
+    background-image: none;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background-color: #efefef;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.3em 1em;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 400ms, color 400ms, border-color 400ms, transform 400ms, box-shadow 400ms;
+    @include size(max-1560) {
+        font-size: 1.125rem;
+    }
+    @include size(max-1200) {
+        font-size: 1rem;
+    }
+    @include size(max-767) {
+        // font-size: 0.875rem;
+        // padding: 0.25em 0.75em;
+    }
+    &::before {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        border: solid 1px #333;
+        border-radius: 100px;
+        transform: scale(1);
+        z-index: 1;
+        transition: background-color 400ms, transform 600ms, opacity 400ms 200ms;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &:only-child {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    &:active {
+        outline: none;
+        transform: scale(0.98);
+    }
+    &:hover,
+    &:focus {
+        color: #333;
+        background-color: #ddd;
+    }
+    &[disabled],
+    &.disabled {
+        filter: opacity(0.5);
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+    &.btn_call_icon {
+        padding-left: calc(0.3em + 38px);
+        position: relative;
+        @include size(max-1560) {
+            padding-left: calc(0.3em + 35px);
+        }
+        @include size(max-767) {
+            padding-left: calc(0.3em + 30px);
+        }
+        &::after {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            left: 0.3em;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50px;
+            background-image: url(../images/icons/phone-solid.svg);
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: center;
+            @include size(max-1560) {
+                width: 28px;
+                height: 28px;
+                background-size: 14px;
+            }
+            @include size(max-1200) {
+                width: 25px;
+                height: 25px;
+                background-size: 14px;
+            }
+            @include size(max-767) {
+                // width: 22px;
+                // height: 22px;
+                // background-size: 12px;
+            }
+        }
+    }
+    &.btn_primary {
+        background-color: $clr-primary--400;
+        color: $clr-dark--900;
+        &::before {
+            border-color: $clr-primary--400;
+        }
+        &:hover,
+        &:focus {
+            box-shadow: 0 6px 18px -4px rgba(#000, 0.2);
+            &::before {
+                // transform: scaleX(1.1) scaleY(1.2);
+                transform: scale(0.9) scaleY(0.8);
+                opacity: 0;
+            }
+        }
+    }
+
+    &.btn_secondary {
+        background-color: $clr-dark--900;
+        &::before {
+            border-color: $clr-dark--900;
+        }
+        color: white;
+        &:hover,
+        &:focus {
+            box-shadow: 0 6px 18px -4px rgba(#000, 0.2);
+            &::before {
+                // transform: scaleX(1.1) scaleY(1.2);
+                transform: scale(0.9) scaleY(0.8);
+                opacity: 0;
+            }
+        }
+    }
+}
