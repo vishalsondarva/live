@@ -1,0 +1,85 @@
+/* Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+.lato_font {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+}
+
+/* SFUIDisplay */
+// @font-face {
+//     font-family: "SFUIDisplay";
+//     src: url("../fonts/sf-ui-display/SFUIDisplay-Light.woff2") format("woff2"),
+//         url("../fonts/sf-ui-display/SFUIDisplay-Light.woff") format("woff"),
+//         url("../fonts/sf-ui-display/SFUIDisplay-Light.ttf") format("truetype");
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+@font-face {
+    font-family: 'SFUIDisplay';
+    src: url('../fonts/sf-ui-display/SFUIDisplay-Regular.eot');
+    src: url('../fonts/sf-ui-display/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Regular.woff') format('woff'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay';
+    src: url('../fonts/sf-ui-display/SFUIDisplay-Light.eot');
+    src: url('../fonts/sf-ui-display/SFUIDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Light.woff2') format('woff2'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Light.woff') format('woff'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay';
+    src: url('../fonts/sf-ui-display/SFUIDisplay-Medium.eot');
+    src: url('../fonts/sf-ui-display/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Medium.woff') format('woff'),
+        url('../fonts/sf-ui-display/SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+
+.SFUIDisplay_font {
+    font-family: "SFUIDisplay", sans-serif;
+    line-height: normal;
+}
+
+/* Noto Sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+.noto_font {
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.roboto_font {
+    font-family: "Roboto", sans-serif;
+}
+
+// Raleway
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&display=swap");
+.raleway_font {
+    font-family: "Raleway", sans-serif;
+}
+
+// Pacifico
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.pacifico_font {
+    font-family: 'Pacifico', cursive;
+}

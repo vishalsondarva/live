@@ -1,0 +1,25 @@
+// utilities
+@import 'utilities/mixins';
+@import 'utilities/variable';
+
+// base
+@import 'base/fonts';
+@import 'base/rowCol';
+@import 'base/common';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// components
+@import "components/slickSlider";
+@import "components/magnificPopup";
+@import "components/banner";
+@import "components/buttons";
+@import "components/titles";
+
+// pages
+@import 'pages/home';
+@import 'pages/aboutUs';
+@import 'pages/commonSection';
+

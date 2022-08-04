@@ -1,0 +1,153 @@
+.title_wrap{
+    margin-bottom: 2rem;
+    display: block;
+    @include size(max-767){
+        margin-bottom: 1.5rem;
+    }
+    @include size(max-540){
+        margin-bottom: 1.25rem;
+    }
+    &.mb-0{
+        margin-bottom: 0;
+    }
+    &.mb-1{
+        margin-bottom: 1rem;
+    }
+    &.mb-2{
+        margin-bottom: 2rem;
+    }
+    &.mb-3{
+        margin-bottom: 3rem;
+    }
+    &.max_width{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+    }
+    &.text_white{
+        *{
+            color: white;
+        }
+        h1,h2,h3{
+            strong{
+                font-weight: 400;
+            }
+        }
+        .line{
+            background-color: rgba(#f34335, 0.25);
+            &::before{
+                background-color: #f34335;
+            }
+        }
+    }
+    &.text_upp{
+        h1,h2,h3{
+            strong{
+                text-transform: uppercase;
+                color: #0c2957;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    >  small {
+        font-family: "SFUIDisplay", sans-serif;
+    line-height: normal;
+        font-size: 1.5625rem;
+        color: $clr-primary--600;
+        font-weight: 300;
+        display: block;
+        margin-bottom: 0.1rem;
+        @include size(max-1560){
+            font-size: 1.35rem;
+        }
+        @include size(max-1200){
+            font-size: 1.22rem;
+        }
+    }
+    h1,h2,h3{
+        margin-bottom: 1rem;
+        small {
+            font-size: 1.5625rem;
+            color: $clr-primary--600;
+            font-weight: 300;
+            display: block;
+            margin-bottom: 0.1rem;
+            @include size(max-1560){
+                font-size: 1.35rem;
+            }
+            @include size(max-1200){
+                font-size: 1.22rem;
+            }
+        }
+        strong{
+            font-size: 2.3125rem;
+            font-weight: 500;
+            display: block;
+            @include size(max-1560){
+                font-size: 2rem;
+            }
+            @include size(max-1200){
+                font-size: 1.65rem;
+            }
+            @include size(max-767){
+                font-size: 1.45rem;
+            }
+        }
+    }
+    .line{
+        display: inline-block;
+        width: 100px;
+        height: 6px;
+        border-radius: 6px;
+        background-color: #fdd9d7;
+        margin-bottom: 1rem;
+        position: relative;
+        &.light{
+            background-color: rgba(#ffffff, 0.2) ;
+            &::before{
+                background-color: white;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            background-color: $clr-primary--600;
+            animation: movedot 8s linear infinite;
+            @keyframes movedot {
+                0%{
+                    left: 0;
+                }
+                50%{
+                    left: calc(100% - 10px);
+                }
+                100%{
+                    left: 0;
+                }
+            }
+        }
+    }
+    .sub_text{
+        max-width: 900px;
+        margin: auto;
+        p{
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+            @include size(max-1560){
+                font-size: 1rem;
+            }
+        }
+    }
+    &.center{
+        text-align: center;
+    }
+    &.right{
+        text-align: right;
+    }
+}
