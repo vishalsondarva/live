@@ -1,0 +1,175 @@
+.sc_title {
+    .main_title {
+        margin-bottom: 1.75rem;
+        position: relative;
+        @include size(max-1200) {
+            margin-bottom: 1.25rem;
+        }
+        @include size(max-767) {
+            margin-bottom: 1rem;
+        }
+        &.mb-1_50 {
+            margin-bottom: 1.5rem;
+        }
+        &.mb-2 {
+            margin-bottom: 2rem;
+            @include size(max-1200) {
+                margin-bottom: 1.5rem;
+            }
+            @include size(max-767) {
+                margin-bottom: 1.25rem;
+            }
+        }
+        > * {
+            font-size: 3rem;
+            font-family: "impact", "Fira Sans";
+            font-weight: normal;
+            letter-spacing: 2px;
+            position: relative;
+            padding-top: 1rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 4px;
+                background-color: $clr-secondary--400;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0%;
+                width: 15px;
+                height: 4px;
+                background-color: white;
+                animation: moveLine2 8s linear infinite;
+            }
+            @include size(max-1560) {
+                font-size: 2.25rem;
+
+                &::before,
+                &::after {
+                    height: 3px;
+                }
+            }
+            @include size(max-1200) {
+                font-size: 2rem;
+                padding-top: 0.5rem;
+                &::before,
+                &::after {
+                    height: 2px;
+                }
+            }
+            @include size(max-767) {
+                font-size: 1.75rem;
+            }
+            @include size(max-380) {
+                font-size: 1.5rem;
+            }
+        }
+        &::before {
+            content: attr(sub-title);
+            position: absolute;
+            left: 0;
+            top: calc(50% + 1rem / 2);
+            transform: translateY(-50%);
+            font-size: 6rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            z-index: -1;
+            text-transform: uppercase;
+            color: #000;
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
+            @include size(max-1560) {
+                font-size: 4.5rem;
+            }
+            @include size(max-1200) {
+                font-size: 3.5rem;
+                top: calc(50% + 0.5rem / 2);
+            }
+            @include size(max-767) {
+                font-size: 2.75rem;
+            }
+            @include size(max-380) {
+                font-size: 2.25rem;
+            }
+        }
+    }
+    &.text-center {
+        .main_title {
+            &::before {
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            > *::before,
+            > *::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            > *::after {
+                animation: moveLine3 8s linear infinite;
+            }
+        }
+    }
+    &.sm_text-center {
+        @include size(max-991) {
+            .main_title {
+                text-align: center;
+                &::before {
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+                > *::before,
+                > *::after {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                > *::after {
+                    animation: moveLine3 8s linear infinite;
+                }
+            }
+        }
+    }
+    .sub_text {
+        line-height: 1.6;
+        @include size(max-1560) {
+            line-height: 1.5;
+        }
+        p {
+            margin-bottom: 1.5em;
+            @include size(max-1200) {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+@keyframes moveLine2 {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: calc(100px - 15px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes moveLine3 {
+    0% {
+        left: calc(50% - 100px / 2 + 15px / 2);
+    }
+    50% {
+        left: calc(50% + 100px / 2 - 15px / 2);
+    }
+    100% {
+        left: calc(50% - 100px / 2 + 15px / 2);
+    }
+}

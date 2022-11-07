@@ -1,0 +1,399 @@
+.banner {
+    .item_wrap {
+        height: 100vh;
+        min-height: 800px;
+        background-color: #222;
+        position: relative;
+        overflow: hidden;
+        @include size(max-1560) {
+            min-height: 600px;
+        }
+        @include size(max-991) {
+            min-height: unset;
+            height: 600px;
+        }
+        @include size(max-767) {
+            height: 400px;
+        }
+        .bg_view {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            display: block;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: var(--blackness);
+            z-index: 1;
+        }
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 2;
+            padding-top: 80px;
+            @include size(max-767) {
+                padding-top: 30px;
+            }
+            .banner_content {
+                font-family: "Poppins", sans-serif;
+                h1,
+                h2 {
+                    font-size: 6rem;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    margin-bottom: 0rem;
+                    line-height: normal;
+                    @include size(max-1560) {
+                        font-size: 5rem;
+                    }
+                    @include size(max-1366) {
+                        font-size: 4.5rem;
+                    }
+                    @include size(max-1200) {
+                        font-size: 3.5rem;
+                    }
+                    @include size(max-991) {
+                        font-size: 2.5rem;
+                    }
+                    @include size(max-767) {
+                        font-size: 1.5rem;
+                    }
+                    strong {
+                        font-weight: 300;
+                        font-size: 120%;
+                    }
+                }
+                .link {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    font-size: 1.8125rem;
+                    display: inline-flex;
+                    align-items: center;
+                    transition: filter 400ms;
+                    @include size(max-1560) {
+                        font-size: 1.35rem;
+                    }
+                    @include size(max-1200) {
+                        font-size: 1.25rem;
+                    }
+                    @include size(max-991) {
+                        font-size: 1.125rem;
+                    }
+                    &:hover {
+                        filter: opacity(0.5);
+                    }
+                    .arrow {
+                        display: inline-block;
+                        // margin-left: 0.25rem;
+                        position: relative;
+                        @include size(max-1560) {
+                            transform: scale(0.8) translateX(-10px) translateY(5px);
+                        }
+                        @include size(max-1200) {
+                            transform: scale(0.65) translateX(-10px) translateY(5px);
+                        }
+                        .img {
+                            width: 30px;
+                            height: 24px;
+                            display: block;
+                            filter: invert(1);
+                            animation: arrowMove 3s infinite linear;
+                            transition: transform 400ms;
+
+                            @keyframes arrowMove {
+                                0% {
+                                    transform: translateX(0) scaleX(-1);
+                                }
+                                50% {
+                                    transform: translateX(15px) scaleX(-1);
+                                }
+                                100% {
+                                    transform: translateX(0px) scaleX(-1);
+                                }
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: -15px;
+                            transform: translateY(-50%);
+                            width: 30px;
+                            height: 30px;
+                            border: solid 1px #fff;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slick {
+        position: relative;
+        .slick-dots {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            @include size(max-767) {
+                padding: 0;
+                bottom: 0;
+                top: unset;
+                transform: none;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+            }
+            li {
+                button {
+                    font-size: 1.5rem;
+                    height: auto;
+                    width: auto;
+                    background-color: transparent;
+                    color: white;
+                    box-shadow: none;
+                    padding: 1.25rem 1.5rem;
+                    padding-top: 1rem;
+                    margin: 0;
+                    border-radius: 0;
+                    position: relative;
+                    @include size(max-1560) {
+                        font-size: 1.25rem;
+                        padding: 1rem 1.25rem;
+                        padding-top: 0.75rem;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 1rem;
+                        left: 0;
+                        right: 0;
+                        width: 45%;
+                        height: 1px;
+                        margin: auto;
+                        background-color: #fff;
+                        transition: width 400ms;
+                        @include size(max-1560) {
+                            bottom: 0.75rem;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: calc(1rem - 15px / 2);
+                        left: calc(15px / -1);
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50px;
+                        border: solid 1px #fff;
+                        transform: translateX(25px);
+                        opacity: 0;
+                        transition: transform 200ms, opacity 200ms;
+                        @include size(max-1560) {
+                            bottom: calc(0.75rem - 12px / 2);
+                            left: calc(12px / -1);
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &::before {
+                            width: 100%;
+                        }
+                        &::after {
+                            opacity: 1;
+                            transform: none;
+                            transition: transform 200ms 200ms, opacity 200ms 300ms;
+                        }
+                    }
+                    @include size(max-767) {
+                        button {
+                            &::before {
+                                width: 100%;
+                                bottom: 11px;
+                            }
+                            &::after {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slick-track {
+            .slick-slide {
+                .banner_content {
+                    > * {
+                        display: none;
+                    }
+                }
+                &.slick-current {
+                    .banner_content {
+                        > * {
+                            display: block;
+                            @keyframes fadeInForUpText {
+                                0% {
+                                    opacity: 0;
+                                    transform: translateY(100px);
+                                }
+                                50% {
+                                    transform: none;
+                                    opacity: 0.2;
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: none;
+                                }
+                            }
+                            @for $i from 1 through 4 {
+                                &:nth-child(#{$i}) {
+                                    animation-name: fadeInForUpText;
+                                    animation-duration: 600ms + 400ms * $i;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.page_banner {
+        .item_wrap {
+            min-height: unset;
+            max-height: 800px;
+            @include size(max-1560){
+                max-height: 600px;
+            }
+            @include size(max-1200){
+                max-height: 550px;
+            }
+            @include size(max-991){
+                max-height: 500px;
+            }
+            @include size(max-767){
+                max-height: 500px;
+                height: 100vh;
+            }
+            .container {
+                .banner_content {
+                    h1,
+                    h2 {
+                        font-size: 3rem;
+                        strong {
+                            font-size: 150%;
+                        }
+                        @include size(max-1560){
+                            font-size: 2rem;
+                        }
+                        @include size(max-1200){
+                            font-size: 1.75rem;
+                        }
+                        @include size(max-991){
+                            font-size: 1.5rem;
+                            margin-bottom: 0.5em;
+                        }
+                        @include size(max-767){
+                            font-size: 1.25rem;
+                        }
+                    }
+                    p {
+                        font-size: 1.25rem;
+                        font-weight: 300;
+                        margin-bottom: 0.5em;
+                        @include size(max-1560){
+                            font-size: 1rem;
+                        }
+                        @include size(max-1200){
+                            font-size: 0.875rem;
+                        }
+                    }
+                    .link {
+                        margin-top: 1.5em;
+                        display: inline-block;
+                        @include size(max-1200){
+                            margin-top: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.container_sm {
+    position: relative;
+}
+.breadcrumb_wrap {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    left: 1rem;
+    ul {
+        background-color: white;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding: 0.75em 0.5em;
+        white-space: nowrap;
+        li {
+            list-style: none;
+            color: #ed1c24;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            border-right: solid 1px #000;
+            padding: 0 0.5em;
+            @media (max-width: 1560px) {
+                font-size: 1rem;
+            }
+            &:last-child{
+                border-right: none;
+            }
+            a {
+                color: #000;
+                font-size: 1.125rem;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 400;
+                text-decoration: none;
+                transition: opacity 400ms;
+                @media (max-width: 1560px) {
+                    font-size: 1rem;
+                }
+                &:hover,
+                &:focus {
+                    opacity: 0.8;
+                }
+            }
+            &.active {
+                color: $clr-secondary--400;
+                a {
+                    color: $clr-secondary--400;
+                }
+            }
+        }
+    }
+}
