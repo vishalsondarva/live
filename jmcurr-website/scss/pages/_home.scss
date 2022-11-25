@@ -1,0 +1,104 @@
+// rule_section
+.rule_section {
+    padding-top: 6rem;
+    .rule_wrap {
+        display: flex;
+        align-items: center;
+        .content_wrap {
+            width: 40%;
+            .content_box {
+                width: 680px;
+                padding: 1.75rem;
+                background-color: white;
+                border-radius: 12px;
+                position: relative;
+                z-index: 2;
+                p{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                .btn {
+                    margin-top: 1.75rem;
+                }
+            }
+        }
+        .img_wrap {
+            max-width: 700px;
+            overflow: hidden;
+            border-radius: 1rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
+// scenario_section
+.scenario_section {
+    .scenario_wrap {
+        max-width: 800px;
+        margin: auto;
+        .img_wrap {
+            border-radius: 1rem;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        .content_box {
+            max-width: 90%;
+            margin: auto;
+            margin-top: -4rem;
+            position: relative;
+            z-index: 2;
+            p {
+                font-size: 2.375rem;
+                font-weight: 500;
+                line-height: 1em;
+            }
+            .btn {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+// learn_section
+.learn_section{
+    .col_custom{
+        padding: 1.25rem;
+        .col_wrap{
+            height: 100%;
+            background-color: white;
+            border-radius: 12px;
+            padding: 1.75rem;
+            .icon_wrap{
+                width: 120px;
+                height: 120px;
+                border-radius: 150px;
+                overflow: hidden;
+                margin: auto;
+                margin-bottom: 1.5rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content_wrap{
+                p{
+                    font-size: 1.4375rem;
+                    font-weight: 500;
+                    // line-height: normal;
+                    color: #272E35;
+                }
+            }
+        }
+    }
+}
