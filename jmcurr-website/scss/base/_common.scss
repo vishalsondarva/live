@@ -15,6 +15,9 @@ html {
     padding: 0px;
     margin: 0px;
     scroll-behavior: auto;
+    @include size(max-1200){
+        font-size: 14px;
+    }
     body {
         font-size: 1rem;
         color: #000;
@@ -26,7 +29,9 @@ html {
         width: 100%;
         overflow-x: hidden;
         min-width: 360px;
-        
+        &.oveHidden{
+            overflow: hidden;
+        }
        
         @at-root {
             h1,
@@ -53,4 +58,25 @@ html {
     background-color: white;
     border-radius: 12px;
     padding: 1.75rem;
+    @include size(max-767){
+        padding: 1.5rem;
+    }
+}
+
+
+@include size(max-991){
+    .pt-3{
+        padding-top: 2rem;
+    }
+    .pt-4{
+        padding-top: 3rem;
+    }
+    .py-3{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .py-4{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }

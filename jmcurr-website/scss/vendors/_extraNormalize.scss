@@ -53,12 +53,12 @@ $spacing: (
         padding-top: $value;
         padding-bottom: $value;
     }
-    // .pt-#{$spacings} {
-    //     padding-top: $value;
-    // }
-    // .pb-#{$spacings} {
-    //     padding-bottom: $value;
-    // }
+    .pt-#{$spacings} {
+        padding-top: $value;
+    }
+    .pb-#{$spacings} {
+        padding-bottom: $value;
+    }
     // .pr-#{$spacings} {
     //     padding-right: $value;
     // }

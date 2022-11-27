@@ -48,7 +48,7 @@
         color: white;
         &:hover,
         &:focus{
-            background-color: $clr-secondary--400;
+            background-color: darken($clr-primary--400, 12px);
         }
     }
 
@@ -57,8 +57,23 @@
         color: $clr-primary--400;
         &:hover,
         &:focus{
-            background-color: $clr-primary--400;
-            color: white;
+            background-color: rgb($clr-primary--400, 18%);
+        }
+    }
+    &.btn_green{
+        background-color: #26A670;
+        color: white;
+        &:hover,
+        &:focus{
+            background-color: darken(#26A670, 10px);
+        }
+    }
+    &.btn_Lblue{
+        background-color: #52B6FF;
+        color: white;
+        &:hover,
+        &:focus{
+            background-color: darken(#52B6FF, 15px);
         }
     }
 }
