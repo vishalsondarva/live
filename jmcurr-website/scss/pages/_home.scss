@@ -1,0 +1,146 @@
+// rule_section
+.rule_section {
+    padding-top: 6rem;
+    @include size(max-991){
+        padding-top: 4rem;
+    }
+    @include size(max-767){
+        padding-top: 3rem;
+    }
+    .rule_wrap {
+        display: flex;
+        align-items: center;
+        .md_size{
+            display: none;
+        }
+        @include size(max-991){
+            flex-wrap: wrap;
+            .md_size{
+                display: block;
+                width: 100%;
+            }
+        }
+        .content_wrap {
+            width: 40%;
+            @include size(max-991){
+                width: 100%;
+                order: 2;
+                .md_size_hide{
+                    display: none;
+                }
+            }
+            .content_box {
+                width: 680px;
+                padding: 1.75rem;
+                background-color: white;
+                border-radius: 12px;
+                position: relative;
+                z-index: 2;
+                @include size(max-991){
+                    margin-top: -4rem;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @include size(max-767){
+                    padding: 1.5rem;
+                }
+                p{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    @include size(max-767){
+                        font-size: 1.75rem;
+                        line-height: normal;
+                    }
+                }
+                .btn {
+                    margin-top: 1.75rem;
+                }
+            }
+        }
+        .img_wrap {
+            max-width: 700px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 1rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
+// scenario_section
+.scenario_section {
+    .scenario_wrap {
+        max-width: 800px;
+        width: 100%;
+        margin: auto;
+        .img_wrap {
+            border-radius: 1rem;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        .content_box {
+            max-width: 90%;
+            margin: auto;
+            margin-top: -4rem;
+            position: relative;
+            z-index: 2;
+            p {
+                font-size: 2.375rem;
+                font-weight: 500;
+                line-height: 1em;
+                @include size(max-767){
+                    font-size: 1.75rem;
+                    line-height: normal;
+                }
+            }
+            .btn {
+                margin-top: 1.75rem;
+            }
+        }
+    }
+}
+
+// learn_section
+.learn_section{
+    .col_custom{
+        padding: 1.25rem;
+        .col_wrap{
+            height: 100%;
+            background-color: white;
+            border-radius: 12px;
+            padding: 1.75rem;
+            .icon_wrap{
+                width: 7.5rem;
+                height: 7.5rem;
+                border-radius: 150px;
+                overflow: hidden;
+                margin: auto;
+                margin-bottom: 1.5rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content_wrap{
+                p{
+                    font-size: 1.4375rem;
+                    font-weight: 500;
+                    // line-height: normal;
+                    color: #272E35;
+                }
+            }
+        }
+    }
+}
