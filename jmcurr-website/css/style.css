@@ -999,6 +999,7 @@ h6 {
   transition: -webkit-box-shadow 300ms;
   transition: box-shadow 300ms;
   transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+  font-family: "GTWalsheimPro";
 }
 @media (max-width: 767px) {
   .input_group .input {
@@ -1496,6 +1497,26 @@ h6 {
   display: block;
 }
 
+.ruleTabs_section .ruleTabs_wrapper .rule_search_wrap {
+  margin-bottom: 3rem;
+}
+.ruleTabs_section .ruleTabs_wrapper .rule_search_wrap .input_group .input {
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  padding: 1em 2em;
+}
+.ruleTabs_section .ruleTabs_wrapper .rule_search_wrap .input_group .input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  background-image: url(../../images/icons/close-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  cursor: pointer;
+}
 .ruleTabs_section .ruleTabs_wrapper .tabs_wrapper {
   display: -webkit-box !important;
   display: -ms-flexbox !important;

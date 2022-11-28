@@ -29,6 +29,7 @@ $input-clr: #222;
         border: solid 1px #e7e7e7;
         color: $input-clr;
         transition: box-shadow 300ms;
+        font-family: "GTWalsheimPro";
         @media (max-width: 767px) {
             padding: 0.5rem 0.75rem;
         }

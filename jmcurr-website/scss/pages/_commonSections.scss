@@ -30,6 +30,28 @@
 // ruleTabs_section
 .ruleTabs_section {
     .ruleTabs_wrapper {
+        .rule_search_wrap {
+            margin-bottom: 3rem;
+            .input_group {
+                .input {
+                    border-radius: 100px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #000;
+                    padding: 1em 2em;
+                    &::-webkit-search-cancel-button {
+                        -webkit-appearance: none;
+                        height: 1em;
+                        width: 1em;
+                        background-image: url(../../images/icons/close-icon.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 1em;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
         .tabs_wrapper {
             display: flex !important;
             max-height: 460px;
@@ -414,10 +436,10 @@
         gap: 2rem;
         align-items: center;
         margin-bottom: 3em;
-        @include size(max-991){
+        @include size(max-991) {
             gap: 1rem;
         }
-        @include size(max-767){
+        @include size(max-767) {
             grid-template-columns: repeat(2, 1fr);
         }
         .tab {
@@ -430,11 +452,11 @@
             position: relative;
             cursor: pointer;
             transition: background-color 400ms, box-shadow 400ms;
-            @include size(max-991){
+            @include size(max-991) {
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
             }
-            @include size(max-767){
+            @include size(max-767) {
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
             }
@@ -496,7 +518,7 @@
                 padding: 10px;
                 box-shadow: 0 4px 22px -4px rgba(0, 0, 0, 0.2);
                 position: relative;
-                @include size(max-991){
+                @include size(max-991) {
                     max-width: 330px;
                 }
                 .img_wrap {
@@ -537,7 +559,7 @@
                     align-content: center;
                     justify-content: center;
                     gap: 40px;
-                    @include size(max-767){
+                    @include size(max-767) {
                         gap: 35px;
                     }
                     .btn {
@@ -594,7 +616,7 @@
                 justify-content: space-between;
                 padding: 1.25em 1.5em;
                 cursor: pointer;
-                @include size(max-767){
+                @include size(max-767) {
                     padding: 1em 1.25em;
                 }
                 p {
@@ -630,7 +652,7 @@
                 padding: 1.25em 1.5em;
                 font-size: 1rem;
                 display: none;
-                @include size(max-767){
+                @include size(max-767) {
                     padding: 1em 1.25em;
                 }
                 p {
