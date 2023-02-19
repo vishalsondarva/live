@@ -1,0 +1,31 @@
+.header{
+    background-color: #131313;
+    padding: 1rem 0;
+    .row{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        .logo_wrap{
+            display: inline-block;
+            text-decoration: none;
+            max-width: 400px;
+            width: calc(100% / 3);
+            img{
+                margin: auto;
+                max-height: 90px;
+            }
+            &:first-child{
+                img{
+                    margin-left: 0;
+                }
+            }
+            &:last-child{
+                img{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
