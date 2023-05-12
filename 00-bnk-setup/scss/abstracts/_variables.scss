@@ -1,0 +1,37 @@
+// *** COLORS ***
+
+// primary
+$clr-primary--300: #a8a8fa;
+$clr-primary--400: #5353f5;
+$clr-primary--400--hover: darken(#5353f5, 8px);
+
+// secondary
+$clr-secondary--400: #38cca1;
+$clr-secondary--400--hover: darken(#38cca1, 8px);
+
+// light
+$clr-light--100: #ffffff;
+$clr-light--200: #f1f1f5;
+
+// dark
+$clr-dark--200: #c8c8c8;
+$clr-dark--400: #868686;
+$clr-dark--600: #7b8099;
+$clr-dark--900: #000000;
+
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         --light: ;
+//         --dark: initial;
+//     }
+// }
+
+// @media (prefers-color-scheme: light) {
+//     :root {
+//         --dark: ;
+//         --light: initial;
+//     }
+// }
+
+// *** END COLORS ***

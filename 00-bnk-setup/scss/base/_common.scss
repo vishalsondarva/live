@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    word-break: break-word;
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+    &::selection {
+        background: $clr-primary--400;
+        color: white;
+    }
+}
+// html,
+// body {
+//     font-size: 62.5%;
+//     @include size(max-991) {
+//         font-size: 54.6875%;
+//     }
+// }
+
+html {
+    padding: 0px;
+    margin: 0px;
+    color-scheme: light dark;
+    scroll-behavior: auto;
+    font-size: 16px;
+    @include size(max-991) {
+        font-size: 14px;
+    }
+    body {
+        font-family: $ft-primary;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: normal;
+        color: $clr-dark--400;
+        background-color: $clr-light--100;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        min-width: 320px;
+        overflow-x: hidden;
+        touch-action: manipulation;
+        .scroll_off {
+            overflow: hidden !important;
+        }
+        @at-root {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: bold;
+                color: #111111;
+            }
+        }
+    }
+}
