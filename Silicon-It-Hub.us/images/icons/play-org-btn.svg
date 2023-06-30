@@ -1,0 +1,44 @@
+<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        [id*="cic-"] {
+            opacity: 0;
+            transform-origin: center;
+            animation: waves 3s ease-in-out infinite;
+        }
+
+        #cic-1 {
+            animation-delay: 0s;
+        }
+
+        #cic-2 {
+            animation-delay: 1s;
+        }
+
+        #cic-3 {
+            animation-delay: 2s;
+        }
+
+        @keyframes waves {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+
+            100% {
+                stroke: transparent;
+                fill: transparent;
+            }
+        }
+    </style>
+    <circle id="cic-1" opacity="0.4" cx="26.4996" cy="26.5005" r="18" fill="#eee" />
+    <circle id="cic-2" opacity="0.4" cx="26.4996" cy="26.5005" r="18" fill="#eee" />
+    <circle id="cic-3" opacity="0.4" cx="26.4996" cy="26.5005" r="18" fill="#eee" />
+    <circle cx="26.4996" cy="26.5005" r="18" fill="#FF5E14" />
+    <path
+        d="M23.4277 22.9963C23.4277 21.414 25.1782 20.4583 26.5092 21.314L31.7314 24.6711C32.956 25.4583 32.956 27.2485 31.7314 28.0358L26.5092 31.3929C25.1782 32.2485 23.4277 31.2928 23.4277 29.7105V22.9963Z"
+        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

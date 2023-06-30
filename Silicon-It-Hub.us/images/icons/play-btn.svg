@@ -1,0 +1,47 @@
+<svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+        [id*="cic-"] {
+            opacity: 0;
+            transform-origin: center;
+            animation: waves 3s ease-in-out infinite;
+        }
+
+        #cic-1 {
+            animation-delay: 0s;
+        }
+
+        #cic-2 {
+            animation-delay: 1s;
+        }
+
+        #cic-3 {
+            animation-delay: 2s;
+        }
+
+        @keyframes waves {
+            0% {
+                opacity: 0;
+            }
+
+           50% {
+                transform: scale(2);
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0;
+                stroke: transparent;
+                fill: transparent;
+            }
+        }
+    </style>
+<!-- <path id="cic-1" d="M109 54.5C109 84.5995 84.5995 109 54.5 109C24.4005 109 0 84.5995 0 54.5C0 24.4005 24.4005 0 54.5 0C84.5995 0 109 24.4005 109 54.5Z" fill="white" fill-opacity="0.27"/>
+<path id="cic-2" d="M94 54.5C94 76.3152 76.3152 94 54.5 94C32.6848 94 15 76.3152 15 54.5C15 32.6848 32.6848 15 54.5 15C76.3152 15 94 32.6848 94 54.5Z" fill="white" fill-opacity="0.36"/>
+<path id="cic-3" d="M94 54.5C94 76.3152 76.3152 94 54.5 94C32.6848 94 15 76.3152 15 54.5C15 32.6848 32.6848 15 54.5 15C76.3152 15 94 32.6848 94 54.5Z" fill="white" fill-opacity="0.36"/> -->
+
+<circle id="cic-1" opacity="0.2" cx="54.5" cy="54.5" r="25" fill="#fff" />
+<circle id="cic-2" opacity="0.2" cx="54.5" cy="54.5" r="25" fill="#fff" />
+<circle id="cic-3" opacity="0.2" cx="54.5" cy="54.5" r="25" fill="#fff" />
+
+<circle opacity="1" cx="54.5" cy="54.5" r="25" fill="#fff" />
+<path d="M66.0533 54.7145C66.3866 54.907 66.3866 55.3881 66.0533 55.5806L50.0697 64.8087C49.7363 65.0012 49.3197 64.7606 49.3197 64.3757L49.3197 45.9194C49.3197 45.5345 49.7363 45.294 50.0697 45.4864L66.0533 54.7145Z" fill="#FF5E14"/>
+</svg>
