@@ -4,7 +4,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "https://vishalsondarva.github.io/live/PTWA/",
     "name": "PTWA",
     "short_name": "PTWA",
     "icons": [
