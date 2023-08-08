@@ -3,7 +3,7 @@
     "background_color": "#F7ECEC",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/",
+    "scope": "https://vishalsondarva.github.io/live/PTWA/",
     "start_url": "https://vishalsondarva.github.io/live/PTWA/",
     "name": "PTWA",
     "short_name": "PTWA",
