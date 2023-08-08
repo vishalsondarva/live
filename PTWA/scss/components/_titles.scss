@@ -1,0 +1,15 @@
+.sc_title {
+    margin-bottom: 1rem;
+    h2,
+    h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: $clr-primary--400;
+        text-transform: uppercase;
+        margin-bottom: 0.2em;
+        
+    }
+    > p {
+        margin-bottom: 1.25em;
+    }
+}

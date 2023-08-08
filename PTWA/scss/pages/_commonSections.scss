@@ -1,0 +1,144 @@
+.app_info {
+    min-height: 100dvh;
+    background-image: url(../images/bt-ft-img.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    .slick {
+        .slick_item {
+            text-align: center;
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100dvh;
+            padding-bottom: 4%;
+            .img_wrap {
+                margin-bottom: 1rem;
+                img {
+                    margin: auto;
+                    @media (max-height: 750px) {
+                        max-height: 380px;
+                    }
+                }
+            }
+            .content_wrap {
+                max-width: 280px;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                h1,
+                h2 {
+                    font-size: 1.4rem;
+                    margin-bottom: 0.25em;
+                    @media (max-height: 750px) {
+                        font-size: 1.375rem;
+                    }
+                }
+                p {
+                    color: #000;
+                    margin-bottom: 1em;
+                }
+                .btn {
+                    overflow: visible;
+                    margin: 0 auto;
+                    margin-top: 12%;
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                    padding: 0.25em;
+                    -webkit-tap-highlight-color: transparent;
+                    @media (max-height: 750px) {
+                        width: 56px;
+                        height: 56px;
+                        margin-top: 8%;
+                    }
+                    &:hover,
+                    &:focus {
+                        background-color: $clr-primary--400;
+                    }
+
+                    .waves {
+                        --size: 50px;
+                        position: absolute;
+                        width: calc(100% + var(--size));
+                        height: calc(100% + var(--size));
+                        border-radius: 100%;
+                        background: rgba($clr-primary--400, 0.15);
+                        opacity: 0;
+                        top: calc(var(--size) / -2);
+                        left: calc(var(--size) / -2);
+                        z-index: -1;
+                        animation: waves 3s ease-in-out infinite;
+                        @media (max-height: 750px) {
+                            --size: 45px;
+                        }
+                    }
+
+                    .wave-1 {
+                        animation-delay: 0s;
+                    }
+
+                    .wave-2 {
+                        animation-delay: 1s;
+                    }
+
+                    .wave-3 {
+                        animation-delay: 2s;
+                    }
+                }
+
+                @keyframes waves {
+                    0% {
+                        transform: scale(0.4);
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: scale(1);
+                        opacity: 0;
+                    }
+                }
+
+            }
+        }
+
+        .slick-dots {
+            margin: 2dvh 0;
+            @media (max-height: 750px) {
+                margin: 1.5dvh 0;
+            }
+            li {
+                width: 7px;
+                height: 7px;
+                background-color: #C4D2DF;
+                margin: 0 5px;
+                border-radius: 10px;
+                &.active {
+                    background-color: $clr-primary--400;
+                }
+            }
+        }
+
+        .slick-current {
+            .img_wrap {
+                animation: fadeInForUp 300ms linear;
+            }
+            .content_wrap:not(.btn) {
+                @for $i from 1 through 3 {
+                    >*:not(.btn):nth-child(#{$i}) {
+                        transform-origin: top;
+                        animation-name: fadeInFor;
+                        animation-duration: 300ms + 250ms * $i;
+                    }
+                }
+            }
+        }
+    }
+
+}
