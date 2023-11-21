@@ -1,0 +1,99 @@
+.banner_sct{
+    padding: 3rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include size(max-1560){
+        min-height: 640px;
+    }
+    @include size(max-1200){
+        min-height: 500px;
+    }
+    @include size(max-991){
+        min-height: 300px;
+    }
+    .banner_content{
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+        @include size(max-1560){
+            max-width: 800px;
+        }
+        @include size(max-1200){
+            max-width: 600px;
+        }
+        @include size(max-991){
+            max-width: 500px;
+        }
+        h1{
+            font-size: 5rem;
+            line-height: 1.2em;
+            @include size(max-1560){
+                font-size: 4rem;
+            }
+            @include size(max-1200){
+                font-size: 3rem;
+            }
+            @include size(max-991){
+                font-size: 2.5rem;
+            }
+            @include size(max-767){
+                font-size: 2rem;
+            }
+            strong{
+                color: $clr-primary--400;
+            }
+            small{
+                font-size: 0.4em;
+                font-weight: 500;
+            }
+        }
+        h2{
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: $clr-dark--800;
+            @include size(max-1560){
+                font-size: 2rem;
+            }
+            @include size(max-1200){
+                font-size: 1.5rem;
+            }
+            @include size(max-991){
+                font-size: 1.25rem;
+            }
+            
+            @include size(max-767){
+                font-size: 1.125rem;
+            }
+            
+        }
+        .btn_wrap{
+            margin-top: 2.5rem;
+            @include size(max-1560){
+                margin-top: 2rem;
+            }
+            @include size(max-1200){
+                margin-top: 1rem;
+            }
+            .btn{
+                font-size: 1.75rem;
+                margin: 0.4em;
+                padding: 0.25em 1em;
+                font-weight: 500;
+                @include size(max-1560){
+                    font-size: 1.5rem;
+                }
+                @include size(max-1200){
+                    font-size: 1.25rem;
+                }
+                @include size(max-991){
+                    font-size: 1.125rem;
+                    margin: 0.3em;
+                }
+            }
+        }
+    }
+}
