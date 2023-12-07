@@ -1,0 +1,156 @@
+.btn {
+    font-family: $ft-primary;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.85em 1em;
+    border-radius: 12px;
+    color: $clr-dark--800;
+    background-color: $clr-dark--200;
+    transition: color 500ms, background-color 500ms, border-color 500ms, transform 500ms, box-shadow 500ms;
+    transition-timing-function: ease-in-out;
+
+    &:not(:only-child) {
+        margin-bottom: 0.25em;
+        margin-right: 0.25em;
+    }
+
+    &:active {
+        outline: none;
+        opacity: 0.925;
+    }
+
+    // &:hover:not(.btn_transparent),
+    // &:focus:not(.btn_transparent) {
+    //     color: #333;
+    //     background-color: #ddd;
+    // }
+    &[disabled],    
+    &.disabled {
+        filter: opacity(0.5);
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    &.btn_primary {
+        background-color: $clr-primary--400;
+        color: $clr-dark--100;
+        &:hover,
+        &:focus {
+            background-color: $clr-primary--400;
+            color: $clr-dark--100;
+        }
+    }
+
+    &.btn_primary_br {
+        background-color: transparent;
+        color: $clr-dark--900;
+        border-color: #D2D2D2;
+        &:hover,
+        &:focus {
+            // background-color: rgba($clr-primary--400, 0.25);
+        }
+    }
+
+    &.btn_secondary {
+        background-color: $clr-secondary--400;
+        color: $clr-dark--100;
+        &:hover,
+        &:focus {
+            background-color: $clr-secondary--400;
+            color: $clr-dark--100;
+        }
+    }
+    &.btn_transparent{
+        background-color: transparent;
+        border-radius: 4px;
+        padding: 0.25em;
+    }
+    &.btn_tab{
+        border-radius: 50px;
+        background-color: transparent;
+        border: solid 1px #D2D2D2;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #031418;
+        padding: 0.5em 1em;
+        white-space: nowrap;
+        transition: background-color 500ms, border-color 500ms;
+        &.active{
+            background-color: #F0F8FF;
+            border-color: #DBEDFC;
+        }
+    }
+    &.btn_red,
+    &.btn_green{
+        background-color: #2DBF08;
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.25em 0.5em;
+        border-radius: 50px;
+        min-width: 110px;
+    }
+    &.btn_red{
+        background-color: #E92026;
+    }
+
+}
+
+.slick .slick-dots {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        list-style: none;
+        button {
+            margin: 0 3px;
+            padding: 0;
+            display: block;
+            border-radius: 50px;
+            width: 6px;
+            height: 6px;
+            background-color: #C4D2DF;
+            border: none;
+            font-size: 0px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 500ms, width 500ms;
+        }
+        &.slick-active {
+            button {
+                width: 20px;
+                background-color: #111826;
+            }
+        }
+    }
+}
+
+
+.btn_effect {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: ripple-animation 1.5s;
+}
+@keyframes ripple-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(100);
+        opacity: 0;
+    }
+}

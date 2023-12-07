@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PTWA | SiteName</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="main_screen bg_clr1">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <div class="btn_wrap">
+                    <a href="#menu" class="btn btn_transparent btn_menu" title="Menu">
+                        <span class="iconFont-menu"></span>
+                    </a>
+                </div>
+                <div class="title_wrap">
+                    <h3>Dashboard</h3>
+                </div>
+                <div class="user_info">
+                    <p>Hi, Amit</p>
+                    <a href="home.html" class="btn avtar" title="My Account">
+                        <img src="images/circular-img-02.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </header>
+        <!-- end-header -->
+
+
+        <!-- body -->
+        <div class="main_body">
+
+            <div class="tabs_wrapper">
+                <div class="overflow">
+                    <div class="tab_wrap">
+                        <button class="btn btn_tab active" id="Business">Business Profile</button>
+                        <button class="btn btn_tab" id="Director">Director Profile</button>
+                        <button class="btn btn_tab" id="Company">About Company</button>
+                    </div>
+                </div>
+
+                <div class="tabs_container">
+                    <div class="tab_content active" data-tab="Business">
+                        <div class="container">
+                            <div class="profile_wrap">
+                                <a href="#upload" class="profile_upload">
+                                    <img src="images/icons/camera-icon.png" alt="">
+                                </a>
+                                <a href="images/profile-img.png" class="profile_img image_popup">
+                                    <img src="images/profile-img.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="bs_title">
+                                <h3>General Details</h3>
+                            </div>
+                            <form action="#form" class="form">
+                                <div class="input_group">
+                                    <label>GST No.</label>
+                                    <input type="text" class="input" placeholder="GST No.">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>PAN No.</label>
+                                    <input type="text" class="input" placeholder="PAN Card No.">
+                                </div>
+
+                                <div class="input_group file_group input_icon icon_right">
+                                    <label>GST Certificate</label>
+                                    <span class="iconFont-add-file icon"></span>
+                                    <label class="input" index="1">
+                                        <input type="file" class="fileUpload" required="">
+                                        <span class="file_name">Choose File</span>
+                                    </label>
+                                </div>
+
+                                <div class="input_group file_group input_icon icon_right">
+                                    <label>PAN Card</label>
+                                    <span class="iconFont-add-file icon"></span>
+                                    <label class="input" index="1">
+                                        <input type="file" class="fileUpload" required="">
+                                        <span class="file_name">Choose File</span>
+                                    </label>
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Company Address</label>
+                                    <input type="text" class="input" placeholder="Company Address">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>State</label>
+                                    <select class="input input_select">
+                                        <option value="select" selected="">Select your State</option>
+                                        <option value="">State 01</option>
+                                        <option value="">State 02</option>
+                                        <option value="">State 03</option>
+                                    </select>
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Pincode</label>
+                                    <input type="text" class="input" placeholder="Enter Pincode">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>City</label>
+                                    <input type="text" class="input" placeholder="Enter City">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Area</label>
+                                    <input type="text" class="input" placeholder="Enter Area">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Phone No.</label>
+                                    <input type="text" class="input" placeholder="Enter Phone No.">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Landline No.</label>
+                                    <input type="text" class="input" placeholder="Enter Landline No.">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Website URL</label>
+                                    <input type="url" class="input" placeholder="Enter Website URL">
+                                </div>
+
+                                <div class="input_group btn_wrap">
+                                    <a href="#" class="btn btn_primary">
+                                        Submit
+                                    </a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab_content " data-tab="Director">
+                        <div class="container">
+                            <form action="#form" class="form">
+                                <div class="input_group">
+                                    <label>First Name.</label>
+                                    <input type="text" class="input" placeholder="First Name">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Last Name</label>
+                                    <input type="text" class="input" placeholder="Last Name">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Email</label>
+                                    <input type="email" class="input" placeholder="Email">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Contact No.</label>
+                                    <input type="number" class="input" placeholder="Contact No.">
+                                </div>
+
+                                <div class="input_group file_group input_icon icon_right">
+                                    <label>Upload Image.</label>
+                                    <span class="iconFont-add-file icon"></span>
+                                    <label class="input" index="1">
+                                        <input type="file" class="fileUpload" required="">
+                                        <span class="file_name">Choose File</span>
+                                    </label>
+                                </div>
+
+                                <div class="input_group">
+                                    <!-- <label>Company Address</label> -->
+                                    <input type="text" class="input" placeholder="-- Remove Anotheri">
+                                </div>
+
+
+                                <div class="bs_title mt-1">
+                                    <h3>Director/Owner Founder Details</h3>
+                                </div>
+
+
+                                <div class="input_group">
+                                    <label>First Name.</label>
+                                    <input type="text" class="input" placeholder="First Name">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Last Name</label>
+                                    <input type="text" class="input" placeholder="Last Name">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Email</label>
+                                    <input type="email" class="input" placeholder="Email">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Contact No.</label>
+                                    <input type="number" class="input" placeholder="Contact No.">
+                                </div>
+
+                                <div class="input_group file_group input_icon icon_right">
+                                    <label>Upload Image.</label>
+                                    <span class="iconFont-add-file icon"></span>
+                                    <label class="input" index="1">
+                                        <input type="file" class="fileUpload" required="">
+                                        <span class="file_name">Choose File</span>
+                                    </label>
+                                </div>
+
+                                <div class="input_group">
+                                    <!-- <label>Company Address</label> -->
+                                    <input type="text" class="input" placeholder="+ Add Another /Partner/Member">
+                                </div>
+
+                                <div class="input_group">
+                                    <!-- <label>Company Address</label> -->
+                                    <input type="text" class="input" placeholder="-- Remove Anotheri">
+                                </div>
+
+                                <div class="input_group">
+                                    <!-- <label>Company Address</label> -->
+                                    <input type="text" class="input" placeholder="Partner/Member">
+                                </div>
+
+                                <div class="bs_title mt-1">
+                                    <h3>Please Select Your Service Category</h3>
+                                </div>
+
+                                <div class="input_group input_checkbox">
+                                    <input type="checkbox" id="checkbox1" class="checkbox">
+                                    <label for="checkbox1">
+                                        Manufacturer
+                                    </label>
+                                </div>
+
+                                <div class="input_group input_checkbox">
+
+                                    <input type="checkbox" id="checkbox2" class="checkbox">
+                                    <label for="checkbox2">
+                                        Transporters
+                                    </label>
+                                </div>
+
+                                <div class="input_group input_checkbox">
+                                    <input type="checkbox" id="checkbox3" class="checkbox">
+                                    <label for="checkbox3">
+                                        Retailers
+                                    </label>
+                                </div>
+
+                                <div class="input_group input_checkbox">
+                                    <input type="checkbox" id="checkbox4" class="checkbox">
+                                    <label for="checkbox4">
+                                        Dealers/Distributors
+                                    </label>
+                                </div>
+                                <div class="input_group input_checkbox">
+                                    <input type="checkbox" id="checkbox5" class="checkbox">
+                                    <label for="checkbox5">
+                                        Packers
+                                    </label>
+                                </div>
+                                <div class="input_group input_checkbox">
+                                    <input type="checkbox" id="checkbox6" class="checkbox">
+                                    <label for="checkbox6">
+                                        Importers/Exporters
+                                    </label>
+                                </div>
+                                <div class="input_group input_checkbox">
+                                    <input type="checkbox" id="checkbox7" class="checkbox">
+                                    <label for="checkbox7">
+                                        Fuel Oil Dealers
+                                    </label>
+                                </div>
+                                <div class="input_group input_checkbox">
+                                    <input type="checkbox" id="checkbox8" class="checkbox">
+                                    <label for="checkbox8">
+                                        Retail Outlets/ Petrolpumps
+                                    </label>
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Service Sub Category</label>
+                                    <select class="input input_select">
+                                        <option value="select" selected>Select Service Sub Category</option>
+                                        <option value="">State 01</option>
+                                        <option value="">State 02</option>
+                                        <option value="">State 03</option>
+                                    </select>
+                                </div>
+
+                                <div class="input_group btn_wrap">
+                                    <a href="#" class="btn btn_primary">
+                                        Submit
+                                    </a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab_content " data-tab="Company">
+                        <div class="container">
+                            <div class="profile_wrap">
+                                <a href="#upload" class="profile_upload">
+                                    <img src="images/icons/camera-icon.png" alt="">
+                                </a>
+                                <a href="images/profile-img.png" class="profile_img image_popup">
+                                    <img src="images/profile-img.png" alt="">
+                                </a>
+                            </div>
+
+                            <form action="#form" class="form">
+                                <div class="input_group">
+                                    <label>About Company</label>
+                                    <input type="text" class="input" placeholder="About Company">
+                                </div>
+
+                                <div class="input_group">
+                                    <label>History/Vision</label>
+                                    <input type="text" class="input" placeholder="History/Vision">
+                                </div>
+
+                                <div class="input_group file_group input_icon icon_right">
+                                    <label>Company Cover Image</label>
+                                    <span class="iconFont-add-file icon"></span>
+                                    <label class="input" index="1">
+                                        <input type="file" class="fileUpload" required="">
+                                        <span class="file_name">Choose File</span>
+                                    </label>
+                                </div>
+
+                                <div class="input_group file_group input_icon icon_right">
+                                    <label>Company Brochure</label>
+                                    <span class="iconFont-add-file icon"></span>
+                                    <label class="input" index="1">
+                                        <input type="file" class="fileUpload" required="">
+                                        <span class="file_name">Choose File</span>
+                                    </label>
+                                </div>
+
+                                <div class="input_group">
+                                    <label>Company Video URL</label>
+                                    <input type="url" class="input" placeholder="--------">
+                                </div>
+
+                                <div class="input_group btn_wrap">
+                                    <a href="#" class="btn btn_primary">
+                                        Submit
+                                    </a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- footer -->
+            <footer>
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a href="dashboard.html" class="btn btn_transparent">
+                                <span class="iconFont-home"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn_transparent">
+                                <span class="iconFont-search-fill"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="company.html" class="btn btn_transparent">
+                                <span class="iconFont-users"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product-listing.html" class="btn btn_transparent">
+                                <span class="iconFont-cart"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="leads-queries.html" class="btn btn_transparent">
+                                <span class="iconFont-search-users"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+            <!-- end-footer -->
+
+
+        </div>
+        <!-- end-body -->
+
+
+
+    </main>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

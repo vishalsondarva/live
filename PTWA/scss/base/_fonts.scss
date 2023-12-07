@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+$ft-primary: "Manrope", sans-serif;
+
+
+@font-face {
+    font-display: auto;
+    font-family: "iconFont";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/iconly.eot");
+    src: url("../fonts/iconly.eot") format("embedded-opentype"),
+        url("../fonts/iconly.woff2") format("woff2"),
+        url("../fonts/iconly.woff") format("woff"),
+        url("../fonts/iconly.ttf") format("truetype"), url("../fonts/iconly.svg") format("svg");
+}
+
+[class="iconFont"],
+[class^="iconFont-"],
+[class*=" iconFont-"] {
+    display: inline-block;
+    font-family: "iconFont" !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.iconFont-user:before {
+    content: "\e000";
+  }
+  
+  .iconFont-search:before {
+    content: "\e001";
+  }
+  
+  .iconFont-search-fill:before {
+    content: "\e002";
+  }
+  
+  .iconFont-users:before {
+    content: "\e003";
+  }
+  
+  .iconFont-mic:before {
+    content: "\e004";
+  }
+  
+  .iconFont-menu:before {
+    content: "\e005";
+  }
+  
+  .iconFont-lock:before {
+    content: "\e006";
+  }
+  
+  .iconFont-home:before {
+    content: "\e007";
+  }
+  
+  .iconFont-file:before {
+    content: "\e008";
+  }
+  
+  .iconFont-email:before {
+    content: "\e009";
+  }
+  
+  .iconFont-chavron-right:before {
+    content: "\e00a";
+  }
+  
+  .iconFont-chat:before {
+    content: "\e00b";
+  }
+  
+  .iconFont-arrow-right:before {
+    content: "\e00c";
+  }
+  
+  .iconFont-arrow-left:before {
+    content: "\e00d";
+  }
+  
+  .iconFont-add-file:before {
+    content: "\e00e";
+  }
+  
+  .iconFont-search-users:before {
+    content: "\e00f";
+  }
+  
+  .iconFont-cart:before {
+    content: "\e010";
+  }
+  
+  .iconFont-phone:before {
+    content: "\e011";
+  }
+  
+  .iconFont-location:before {
+    content: "\e012";
+  }
+  
+  .iconFont-bag:before {
+    content: "\e013";
+  }
+  
+  .iconFont-plus:before {
+    content: "\e014";
+  }
+  
+  .iconFont-close:before {
+    content: "\e015";
+  }
+  
+  .iconFont-archive:before {
+    content: "\e016";
+  }
+  
+  .iconFont-share:before {
+    content: "\e017";
+  }
+  
