@@ -791,13 +791,12 @@ input {
     &.bg_2 {
         top: 100px;
         backdrop-filter: blur(8px);
-        background-image: linear-gradient(90deg, rgba(18, 13, 24, 0.99), rgba(35, 27, 54, 0.9), rgba(16, 8, 24, 0.9));
+        background-image: linear-gradient(-50deg, #693a91,#0d101b 90%);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.02),
+        0 0 4px rgba(255, 255, 255, 0.1);
     }
 
-    &.bg_3 {
-        top: 200px;
-        background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.9), rgba(27, 20, 27, 0.99), rgba(15, 15, 15, 0.9));
-    }
+   
 }
 
 .btn_audio {
