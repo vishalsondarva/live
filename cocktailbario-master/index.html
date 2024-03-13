@@ -1,0 +1,1117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>The CocktailBar</title>
+    <link rel="icon" href="assets/fav.png" type="image/png" sizes="16x16" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/web.css?20242901" />
+    <link rel="stylesheet" href="css/responsive.css?20242901" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/animate.css?20242901" />
+</head>
+
+<body>
+    <section id="hero">
+        <header class="main_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 px-xl-0 px-lg-3 px-0">
+                        <!-- justify-content-between -->
+                        <div class="nav-menu d-flex align-items-center">
+                            <div class="nav-menu-logo">
+                                <a href="index.html">
+                                    <img src="assets/logo.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                            <div class="nav-menu-content ms-auto me-0">
+                                <ul>
+                                    <li>
+                                        <a href="https://cocktailbar20.medium.com/the-cocktailbar-litepaper-63a26b5406f5"
+                                            target="_blank" rel="noopener noreferrer">Litepaper</a>
+
+                                    </li>
+                                    <li class="d-lg-none d-block text-end py-0">
+                                        <img src="assets/icons/close.svg" class="toggle-close" alt="">
+                                    </li>
+                                    <li class="d-lg-none d-block text-center py-0">
+                                        <a href="index.html" class="logo-mobile">
+                                            <img src="assets/logo.png" alt="" data-aos="fade-up" class="w-100">
+                                        </a>
+                                    </li>
+                                    <li class="nav-menu-content-dropdown">
+                                        <a href="#"><span>Charts/Analytics</span> <img
+                                                src="assets/icons/chevron-down.svg" alt=""></a>
+                                        <ul>
+                                            <li><a href="https://www.coingecko.com/en/coins/cocktailbar"><img
+                                                        src="assets/nav/coingecko.png"> <span>CoinGecko</span></a></li>
+                                            <li><a href="https://coinmarketcap.com/currencies/cocktail-bar"><img
+                                                        src="assets/nav/cmc.png"><span>Coin Market</span></a></li>
+                                            <li><a
+                                                    href="https://www.dextools.io/app/en/ether/pair-explorer/0x39fb7af42ef12d92a0d577ca44cd54a0f24c4915"><img
+                                                        src="assets/nav/dextools.png"> <span>Dextools</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu-content-dropdown">
+                                        <a href="#">$COC Token <img src="assets/icons/chevron-down.svg" alt=""></a>
+                                        <ul>
+                                            <li><a
+                                                    href="https://etherscan.io/token/0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf"><img
+                                                        src="assets/nav/etherscan-logo.png"> Etherscan</a></li>
+                                            <li><a
+                                                    href="https://app.uniswap.org/swap?outputCurrency=0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf"><img
+                                                        src="assets/nav/uniswap.png"> Uniswap</a></li>
+                                            <li><a href="https://app.1inch.io/#/1/simple/swap/ETH/COC"><img
+                                                        src="assets/nav/1inch_token.png">1Inch</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-menu-content-dropdown">
+                                        <a href="#">Social <img src="assets/icons/chevron-down.svg" alt=""></a>
+                                        <ul>
+                                            <li><a href="ww.x.com/cocktailbarCOC"><img src="assets/nav/x.png"> X</a>
+                                            </li>
+                                            <li><a href="https://t.me/cocktailbar_chat"><img
+                                                        src="assets/nav/telegram.png">
+                                                    Telegram</a></li>
+                                            <li><a href="https://discord.gg/fvmpMb3nCY"><img
+                                                        src="assets/nav/discord.png">
+                                                    Discord</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn_audio">
+                                <div class="btn__a" id="player-container">
+                                    <img src="assets/icons/play.svg" id="play-pause" class="play" alt="">
+                                </div>
+                                <audio id="track">
+                                    <source src="https://cldup.com/qR72ozoaiQ.mp3" type="audio/mpeg" />
+                                </audio>
+                            </div>
+                            <img src="assets/icons/toggle.svg" class="toggle d-lg-none" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="hero-circle">
+                        <!-- <img src="assets/circle-headline.svg" alt="" class="w-100"> -->
+                        <img src="assets/circle-1.svg" alt="" class="w-100">
+                        <img src="assets/circle-2.svg" alt="" class="w-100 circle-2">
+                    </div>
+                    <div class="hero-text">
+                        <div class="sub-headline flicker">W<span>e</span>lco<span>m</span>e T<span>o</span></div>
+                        <div class="headline neon-purple">THE COCKTAILBAR</div>
+                        <div class="desc">A splash of opportunity with every drop</div>
+                        <div class="d-block d-md-inline-flex text-center">
+                            <a href="javascript:void(0)" class="cta" onclick="metaverseShow()">
+                                <span class="cta-icon"><img src="assets/icons/terminal.svg" alt="" class="w-100"></span>
+                                LAUNCH METAVERSE
+                            </a>
+                            <a href="javascript:void(0);" onclick="showModal('box-1')" class="cta-second">
+                                <span class="cta-second-text">VIEW PROJECTS</span>
+                                <span class="cta-icon"><img src="assets/icons/chevron-right.svg" alt=""
+                                        class="w-100"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="sticker">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="offset-3 col-6 offset-lg-5 col-lg-2 px-4 text-center">
+                            <img src="assets/sticker.png" alt="" class="w-100 on-off delay-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="icon">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="icon-box">
+                        <img src="assets/frame-desktop.png" alt="" class="w-100 d-none d-lg-block">
+                        <img src="assets/frame-mobile.png" alt="" class="w-100 d-block d-lg-none">
+                        <div class="icon-box-outline">
+                            <div class="icon-image">
+                                <img src="assets/icon-1.png" alt="" class="w-100">
+                            </div>
+                            <div class="icon-desc">Stake $COC tokens to unlock a myriad of opportunities</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="icon-box">
+                        <img src="assets/frame-desktop.png" alt="" class="w-100 d-none d-lg-block">
+                        <img src="assets/frame-mobile.png" alt="" class="w-100 d-block d-lg-none">
+                        <div class="icon-box-outline">
+                            <div class="icon-image">
+                                <img src="assets/icon-2.png" alt="" class="w-100">
+                            </div>
+                            <div class="icon-desc">Sit back, relax while we mix up your rewards</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="icon-box">
+                        <img src="assets/frame-desktop.png" alt="" class="w-100 d-none d-lg-block">
+                        <img src="assets/frame-mobile.png" alt="" class="w-100 d-block d-lg-none">
+                        <div class="icon-box-outline">
+                            <div class="icon-image">
+                                <img src="assets/icon-3.png" alt="" class="w-100">
+                            </div>
+                            <div class="icon-desc">Earn divis and project tokens from each drop</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 col-xl-4">
+                    <div class="title">
+                        <div class="sub flicker">T<span>h</span>e C<span>o</span>cktail<span>B</span>ar</div>
+                        <div class="text neon-purple">ABOUT US</div>
+                    </div>
+                    <div class="text-center text-lg-end">
+                        <div class="about-arrow">
+                            <img src="assets/about-arrow.svg" alt="" class="w-100 d-none d-lg-inline-block">
+                            <img src="assets/about-arrow-mobile.svg" alt="" class="w-100 d-inline-block d-lg-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 col-xl-8">
+                    <div class="about-box" data-aos="fade-in" data-aos-delay="500" data-aos-duration="800">
+                        <h2>Welcome to The CocktailBar</h2>
+                        <p>Kick back and get comfy as we dive into the vibrant world of The CocktailBar — your ultimate
+                            destination in the web3 universe where finance meets fun head-on! With a keen focus on
+                            delivering straightforward, yet captivating web3 experiences, we're blending the thrill of
+                            gaming with the allure of immersive digital environments right at your fingertips.</p>
+                        <p>Here at The CocktailBar, our mission is simple: to concoct a rich, interactive community by
+                            rolling out a select mix of projects that are not just entertaining but also brimming with
+                            utility. Think of us as your virtual speakeasy for the digital age, where cutting-edge tech
+                            and pure, unadulterated fun come together in a symphony of pixels.</p>
+                        <p>Whether you're just starting to explore the blockchain terrain or you've been navigating
+                            these waters like a seasoned sailor, our platform is your haven for both entertainment and
+                            value. Our focus? To continuously refine and advance our offerings to ensure they're in
+                            perfect sync with what our community desires and the practical applications they seek.</p>
+                        <p>By concentrating our efforts on a handful of significant ventures at a time, we're not just
+                            promising quality — we're guaranteeing an impactful experience. So, come on in and make
+                            yourself at home at The CocktailBar, where the future of web3 comes alive with every click,
+                            swipe, and tap. Cheers to a journey that's as enriching as it is exhilarating!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container" id="coc">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center px-xl-5">
+                    <div class="title">
+                        <div class="sub flicker"><span>O</span>ur <span>T</span>o<span>k</span>en</div>
+                        <div class="text neon-purple">$COC PERKS</div>
+                    </div>
+                    <div class="pt-3 fw-medium position-relative z-index-2">
+                        Immerse yourself in a variety of privileges that the CocktailBar ecosystem has to offer. As a
+                        $COC holder, you are a pivotal member of our vibrant community, entitled to an array of perks
+                        that enrich your engagement and recognize your involvement.
+                    </div>
+                </div>
+            </div>
+            <div class="row coc-icons">
+                <div class="col-12 col-md-4">
+                    <div class="coc-box">
+                        <div class="coc-image">
+                            <img src="assets/token-1.png" alt="" class="w-100">
+                            <div class="d-none d-lg-block">
+                                <div class="coc-body">
+                                    Earn a share of the profits generated from our diverse array of web3 projects. $COC
+                                    holders enjoy regular dividend distributions, reflecting their stake in our
+                                    collective success.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coc-content">
+                            <div class="coc-desc">DIVIS<br />&nbsp;</div>
+                            <div class="coc-footer text-md-center">
+                                <div><img src="assets/star-bottom.svg" alt="" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none coc-body-mobile">
+                        Earn a share of the profits generated from our diverse array of web3 projects. $COC holders
+                        enjoy regular dividend distributions, reflecting their stake in our collective success.
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="coc-box">
+                        <div class="coc-image">
+                            <img src="assets/token-2.png?20242901" alt="" class="w-100">
+                            <div class="d-none d-lg-block">
+                                <div class="coc-body">
+                                    Get early access to new projects and features, including beta releases and special
+                                    events. Holding $COC opens the door to insider experiences and the opportunity to
+                                    influence the development of the CocktailBar ecosystem.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coc-content">
+                            <div class="coc-desc">EXCLUSIVE ACCESS<br />&nbsp;</div>
+                            <div class="coc-footer text-md-center">
+                                <div><img src="assets/circle-bottom.svg" alt="" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none coc-body-mobile">
+                        Get early access to new projects and features, including beta releases and special events.
+                        Holding $COC opens the door to insider experiences and the opportunity to influence the
+                        development of the CocktailBar ecosystem.
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="coc-box">
+                        <div class="coc-image">
+                            <img src="assets/token-3.png" alt="" class="w-100">
+                            <div class="d-none d-lg-block">
+                                <div class="coc-body">
+                                    Your perspective is valued. Participate in selective governance opportunities where
+                                    your input on certain decisions can influence the evolution of CocktailBar. Whether
+                                    it's feedback on potential project directions or input on community-driven
+                                    initiatives, your $COC tokens grant you the privilege to contribute to specific
+                                    aspects of our journey.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coc-content">
+                            <div class="coc-desc">COMMUNITY<br />CONTRIBUTIONS</div>
+                            <div class="coc-footer text-md-center">
+                                <div><img src="assets/star-bottom.svg" alt="" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none coc-body-mobile">
+                        Your perspective is valued. Participate in selective governance opportunities where your input
+                        on certain decisions can influence the evolution of CocktailBar. Whether it's feedback on
+                        potential project directions or input on community-driven initiatives, your $COC tokens grant
+                        you the privilege to contribute to specific aspects of our journey.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tokenomics">
+        <div class="title-blue d-flex d-lg-none tokenomics-mobile-title">TOKENOMICS</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-7">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 col-xl-11 px-xl-2 px-xxl-4">
+                            <div class="tokenomics-outline">
+                                <div class="title-blue d-none d-lg-inline-block neon-blue">TOKENOMICS</div>
+                                <div class="tokenomics-content" data-aos="fade-in" data-aos-delay="500"
+                                    data-aos-duration="800">
+                                    <h2>Our main concoction</h2>
+                                    <p><strong>$COC</strong> is the native ERC-20 token of the CocktailBar ecosystem,
+                                        operating on the Ethereum Blockchain. It serves as the cornerstone of our
+                                        platform, facilitating transactions, governance, and incentive mechanisms within
+                                        our community.</p>
+
+                                    <ul>
+                                        <li><strong>Total Supply:</strong> 50,000 tokens</li>
+                                        <li><strong>Integral Role:</strong> Holders participate in profit sharing and
+                                            decision-making processes.</li>
+                                        <li><strong>Dynamic Rewards:</strong> Benefit from a range of rewards and
+                                            opportunities as the platform evolves.</li>
+                                        <li><strong>No Buy/Sell Tax</strong></li>
+                                        <li><strong>Liquidity Locked</strong> </li>
+                                    </ul>
+
+                                    <p>Our profit-sharing model ensures that the success of the ecosystem is directly
+                                        reflected in the value of <strong>$COC</strong>, providing a dynamic and
+                                        rewarding experience for all stakeholders. In summary, $COC is not just a token
+                                        but a representation of participation and investment in the CocktailBar
+                                        ecosystem.</p>
+
+                                    <p>As we embark on new projects and initiatives, we look forward to growing
+                                        alongside our community of <strong>$COC holders</strong>, ensuring a prosperous
+                                        and engaging future for all.</p>
+                                </div>
+                                <div class="d-block d-md-inline-flex text-center">
+                                    <a href="javascript:void(0)" class="cta ms-0" onclick="launchDex()">
+                                        <span class="cta-icon"><img src="assets/icons/terminal.svg" alt=""
+                                                class="w-100"></span>
+                                        LAUNCH DEXTOOLS
+                                    </a>
+                                    <a href="javascript:void(0);" onclick="uniSwap()" class="cta-second me-0">
+                                        <span class="cta-second-text">UNISWAP</span>
+                                        <span class="cta-icon"><img src="assets/icons/chevron-right.svg" alt=""
+                                                class="w-100"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-0 px-lg-5">
+                    <!-- <img src="assets/bottle.png" alt="" class="w-100"> -->
+                    <video src="assets/defi.mp4" autoplay muted loop playsinline class="w-100"></video>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="title-blue-mesh neon-blue delay-2">PROJECTS</div>
+                    <div id="desktopSlide" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#desktopSlide" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#desktopSlide" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <div class="projects-box box-1 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-1.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content"
+                                        data-desc="In a world with little left to lose, Metahunt offers the ultimate gamble. Compete in ruthless battles on the fringes of DeFi City for a player-funded prize."
+                                        data-quote="Fight to Survive, Fight to Win!" data-link="https://medium.com"
+                                        data-year="2024 - Q1" data-whitepaper="https://medium.com" data-button="1">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">METAHUNT</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-1')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects-box box-2 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-2.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="Dive into the adrenaline-pumping world of POP3D, where timing is everything. Purchase keys, strategize, and position yourself atop the leaderboard before time elapses to secure crypto rewards.
+                                    [More Info Coming Soon!]
+                                    " data-quote="High Stakes, High Rewards" data-link="https://medium.com"
+                                        data-year="2024 - Q3" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">POP3D</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-2')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects-box box-3 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-3.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="An interactive 3D Marketplace, equipped with its own 3D viewer and editor.
+                                     [More Info Coming Soon!]
+                                     " data-quote="Unleash Your Creativity" data-link="https://medium.com"
+                                        data-year="2024 - Q2" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">ODYSSEY</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-3')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="projects-box box-4 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-4.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="BLOCS offers an interactive 3D NFT experience. Assemble unique structures, forge custom creations, and engage in a marketplace where your designs become valuable, tradeable, and expandable NFTs.
+                                     [More Info Coming Soon!]
+                                     " data-quote="Build, Create, Trade" data-link="https://medium.com"
+                                        data-year="2024 - Q4" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">BLOCS</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-4')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects-box box-5 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-5.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="Step into W3BGAMES, a portal of web3-enabled games where skill pays. Engage in a variety of games, earn crypto payouts, and enjoy a new era of competitive online gaming.
+                                    [More Info Coming Soon!]
+                                    " data-quote="Play, Compete, Earn" data-link="https://medium.com"
+                                        data-year="2024 - Q4" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">W3BGAMES</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-5')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projects-box box-6 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-6.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="[More Info Coming Soon!]
+                                    " data-quote="Better Late Than Never " data-link="https://medium.com"
+                                        data-year="2024/2025 - TBA" data-whitepaper="https://medium.com"
+                                        data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">T0P S3CR3T</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-6')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="arrow-bottom carousel-control-prev" type="button" data-bs-target="#desktopSlide"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="arrow-bottom carousel-control-next" type="button" data-bs-target="#desktopSlide"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div id="mobileSlide" class="carousel slide d-block d-lg-none" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#mobileSlide" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#mobileSlide" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#mobileSlide" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#mobileSlide" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#mobileSlide" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#mobileSlide" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <div class="projects-box box-mobile-1 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-1.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content"
+                                        data-desc="In a world with little left to lose, Metahunt offers the ultimate gamble. Compete in ruthless battles on the fringes of DeFi City for a player-funded prize."
+                                        data-quote="Fight to Survive, Fight to Win!" data-link="https://medium.com"
+                                        data-year="2024 - Q1" data-whitepaper="https://medium.com" data-button="1">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">METAHUNT</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-1')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="projects-box box-mobile-2 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-2.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="Dive into the adrenaline-pumping world of POP3D, where timing is everything. Purchase keys, strategize, and position yourself atop the leaderboard before time elapses to secure crypto rewards.
+                                    [More Info Coming Soon!]
+                                    " data-quote="High Stakes, High Rewards" data-link="https://medium.com"
+                                        data-year="2024 - Q3" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">POP3D</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-2')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="projects-box box-mobile-3 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-3.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="An interactive 3D Marketplace, equipped with its own 3D viewer and editor.
+                                     [More Info Coming Soon!]
+                                     " data-quote="Unleash Your Creativity" data-link="https://medium.com"
+                                        data-year="2024 - Q2" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">ODYSSEY</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-3')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="projects-box box-mobile-4 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-4.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="BLOCS offers an interactive 3D NFT experience. Assemble unique structures, forge custom creations, and engage in a marketplace where your designs become valuable, tradeable, and expandable NFTs.
+                                     [More Info Coming Soon!]
+                                     " data-quote="Build, Create, Trade" data-link="https://medium.com"
+                                        data-year="2024 - Q4" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">BLOCS</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-4')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="projects-box box-mobile-5 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-5.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="Step into W3BGAMES, a portal of web3-enabled games where skill pays. Engage in a variety of games, earn crypto payouts, and enjoy a new era of competitive online gaming.
+                                    [More Info Coming Soon!]
+                                    " data-quote="Play, Compete, Earn" data-link="https://medium.com"
+                                        data-year="2024 - Q4" data-whitepaper="https://medium.com" data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">W3BGAMES</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-5')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="projects-box box-mobile-6 mb-4">
+                                    <div class="projects-image">
+                                        <img src="assets/project-6.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="projects-content" data-desc="[More Info Coming Soon!]
+                                    " data-quote="Better Late Than Never " data-link="https://medium.com"
+                                        data-year="2024/2025 - TBA" data-whitepaper="https://medium.com"
+                                        data-button="0">
+                                        <div class="projects-line">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title">T0P S3CR3T</div>
+                                        <div class="projects-button">
+                                            <a href="javascript:void(0);" class="show-modal"
+                                                onclick="showModal('box-6')">SEE DETAILS <span><img
+                                                        src="assets/icons/chevron-right.svg" alt=""
+                                                        class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="arrow-bottom carousel-control-prev" type="button" data-bs-target="#mobileSlide"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="arrow-bottom carousel-control-next" type="button" data-bs-target="#mobileSlide"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="roadmap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="title-blue-mesh neon-blue delay-2">ROADMAP</div>
+
+                    <ul>
+                        <li>
+                            Launch MetaHunt WhitePaper
+                        </li>
+                        <li>
+                            Launch CocktailBar Website
+                        </li>
+                        <li>
+                            Reignite Telegram
+                        </li>
+                        <li>
+                            Reactivate twitter
+                        </li>
+                        <li>
+                            Raiding commences
+                        </li>
+                    </ul>
+
+                    <iframe title="CadGL 3D Configurator"
+                        src="https://app.cadgl.com/iframe/bfda176a-2255-4413-ac01-116c911419f0"
+                        class="w-100 mb-4 rounded frame-roadmap" frameborder="0"
+                        allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="footer-line"></div>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-3 text-center">
+                    <span class="img-footer"><img src="assets/logo.png" alt="" class="w-100"></span>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <span class="fw-medium">Keep up with our latest news and events. Subscribe to our newsletter.</span>
+                    <form action="" method="POST">
+                        <div class="email-box mt-3">
+                            <input type="email" required name="email" placeholder="Input your email...">
+                            <button class="cta" type="submit" disabled>SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-end">
+                    <div class="footer-icons py-2">
+                        <a href="ww.x.com/cocktailbarCOC"><img src="assets/icons/x.svg" alt="" class="w-100"></a>
+                        <a href="https://t.me/cocktailbar_chat"><img src="assets/icons/telegram.svg" alt=""
+                                class="w-100"></a>
+                        <a href="https://discord.gg/fvmpMb3nCY"><img src="assets/icons/discord.svg" alt=""
+                                class="w-100"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-copy mt-2">
+                    © 2023 CocktailBar . Allright Reserved
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade modal-project" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content overflow-hidden">
+                <!-- <div class="modal-project-details">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel"></h5>
+                    <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt="">
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-between align-items-end align-self-stretch h-project-auto h-100">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="projects-line project-line-modal">
+                                            <img src="assets/project-line.svg" alt="" class="w-100">
+                                        </div>
+                                        <div class="projects-title-outline">
+                                            <div class="projects-title"></div>
+                                            <div class="projects-year"></div>
+                                        </div>
+                                        <div class="projects-quote"></div>
+                                        <div class="projects-desc"></div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 mt-lg-4 projects-button">
+                                    <div class="col-6">
+                                        <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
+                                            <a href="" target="_blank">READ WHITEPAPER</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
+                                            <a href="" target="_blank">VISIT WEBSITE <span><img src="assets/icons/chevron-right.svg" alt="" class="w-100"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div id="modalSlide" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-item box-1 active" data-bs-interval="4000">
+                        <div class="modal-project-details"
+                            style="background: linear-gradient(180deg, rgba(16, 17, 17, 0.00) 0%, rgba(16, 17, 17, 0.00) 34.64%, #101111 100%), url('assets/project-1.png') center center no-repeat; background-size: cover;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelCarousel"></h5>
+                                <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt=""
+                                    style="z-index: 100; position: relative; cursor: pointer;">
+                            </div>
+                            <div class="modal-body">
+                                <div
+                                    class="row justify-content-between align-items-end align-self-stretch h-project-auto h-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="projects-line project-line-modal">
+                                                    <img src="assets/project-line.svg" alt="" class="w-100">
+                                                </div>
+                                                <div class="projects-title-outline">
+                                                    <div class="projects-title">METAHUNT</div>
+                                                    <div class="projects-year">2024 - Q1</div>
+                                                </div>
+                                                <div class="projects-quote">Fight to Survive, Fight to Win!</div>
+                                                <div class="projects-desc">In a world with little left to lose, Metahunt
+                                                    offers the ultimate gamble. Compete in ruthless battles on the
+                                                    fringes of DeFi City for a player-funded prize.</div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 mt-lg-4 projects-button">
+                                            <div class="col-6">
+                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
+                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
+                                                                class="w-100"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item box-2" data-bs-interval="4000">
+                        <div class="modal-project-details"
+                            style="background: linear-gradient(180deg, rgba(16, 17, 17, 0.00) 0%, rgba(16, 17, 17, 0.00) 34.64%, #101111 100%), url('assets/project-2.png') center center no-repeat; background-size: cover;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelCarousel"></h5>
+                                <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt=""
+                                    style="z-index: 100; position: relative; cursor: pointer;">
+                            </div>
+                            <div class="modal-body">
+                                <div
+                                    class="row justify-content-between align-items-end align-self-stretch h-project-auto h-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="projects-line project-line-modal">
+                                                    <img src="assets/project-line.svg" alt="" class="w-100">
+                                                </div>
+                                                <div class="projects-title-outline">
+                                                    <div class="projects-title">POP3D</div>
+                                                    <div class="projects-year">2024 - Q3</div>
+                                                </div>
+                                                <div class="projects-quote">High Stakes, High Rewards</div>
+                                                <div class="projects-desc">Dive into the adrenaline-pumping world of
+                                                    POP3D, where timing is everything. Purchase keys, strategize, and
+                                                    position yourself atop the leaderboard before time elapses to secure
+                                                    crypto rewards. <br />[More Info Coming Soon!]</div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 mt-lg-4 projects-button">
+                                            <div class="col-6">
+                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
+                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
+                                                                class="w-100"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item box-3" data-bs-interval="4000">
+                        <div class="modal-project-details"
+                            style="background: linear-gradient(180deg, rgba(16, 17, 17, 0.00) 0%, rgba(16, 17, 17, 0.00) 34.64%, #101111 100%), url('assets/project-3.png') center center no-repeat; background-size: cover;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelCarousel"></h5>
+                                <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt=""
+                                    style="z-index: 100; position: relative; cursor: pointer;">
+                            </div>
+                            <div class="modal-body">
+                                <div
+                                    class="row justify-content-between align-items-end align-self-stretch h-project-auto h-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="projects-line project-line-modal">
+                                                    <img src="assets/project-line.svg" alt="" class="w-100">
+                                                </div>
+                                                <div class="projects-title-outline">
+                                                    <div class="projects-title">ODYSSEY</div>
+                                                    <div class="projects-year">DATE TBA</div>
+                                                </div>
+                                                <div class="projects-quote">Unleash Your Creativity</div>
+                                                <div class="projects-desc">An interactive 3D Marketplace, equipped with
+                                                    its own 3D viewer and editor. <br />[More Info Coming Soon!]</div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 mt-lg-4 projects-button">
+                                            <div class="col-6">
+                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
+                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
+                                                                class="w-100"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item box-4" data-bs-interval="4000">
+                        <div class="modal-project-details"
+                            style="background: linear-gradient(180deg, rgba(16, 17, 17, 0.00) 0%, rgba(16, 17, 17, 0.00) 34.64%, #101111 100%), url('assets/project-4.png') center center no-repeat; background-size: cover;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelCarousel"></h5>
+                                <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt=""
+                                    style="z-index: 100; position: relative; cursor: pointer;">
+                            </div>
+                            <div class="modal-body">
+                                <div
+                                    class="row justify-content-between align-items-end align-self-stretch h-project-auto h-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="projects-line project-line-modal">
+                                                    <img src="assets/project-line.svg" alt="" class="w-100">
+                                                </div>
+                                                <div class="projects-title-outline">
+                                                    <div class="projects-title">BLOCS</div>
+                                                    <div class="projects-year">DATE TBA</div>
+                                                </div>
+                                                <div class="projects-quote">Build, Create, Trade</div>
+                                                <div class="projects-desc">BLOCS offers an interactive 3D NFT
+                                                    experience. Assemble unique structures, forge custom creations, and
+                                                    engage in a marketplace where your designs become valuable,
+                                                    tradeable, and expandable NFTs.<br />[More Info Coming Soon!]</div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 mt-lg-4 projects-button">
+                                            <div class="col-6">
+                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
+                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
+                                                                class="w-100"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item box-5" data-bs-interval="4000">
+                        <div class="modal-project-details"
+                            style="background: linear-gradient(180deg, rgba(16, 17, 17, 0.00) 0%, rgba(16, 17, 17, 0.00) 34.64%, #101111 100%), url('assets/project-5.png') center center no-repeat; background-size: cover;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelCarousel"></h5>
+                                <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt=""
+                                    style="z-index: 100; position: relative; cursor: pointer;">
+                            </div>
+                            <div class="modal-body">
+                                <div
+                                    class="row justify-content-between align-items-end align-self-stretch h-project-auto h-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="projects-line project-line-modal">
+                                                    <img src="assets/project-line.svg" alt="" class="w-100">
+                                                </div>
+                                                <div class="projects-title-outline">
+                                                    <div class="projects-title">W3BGAMES</div>
+                                                    <div class="projects-year">DATE TBA</div>
+                                                </div>
+                                                <div class="projects-quote">Play, Compete, Earn</div>
+                                                <div class="projects-desc">Step into W3BGAMES, a portal of web3-enabled
+                                                    games where skill pays. Engage in a variety of games, earn crypto
+                                                    payouts, and enjoy a new era of competitive online
+                                                    gaming.<br />[More Info Coming Soon!]</div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 mt-lg-4 projects-button">
+                                            <div class="col-6">
+                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
+                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
+                                                                class="w-100"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item box-6" data-bs-interval="4000">
+                        <div class="modal-project-details"
+                            style="background: linear-gradient(180deg, rgba(16, 17, 17, 0.00) 0%, rgba(16, 17, 17, 0.00) 34.64%, #101111 100%), url('assets/project-6.png') center center no-repeat; background-size: cover;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelCarousel"></h5>
+                                <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt=""
+                                    style="z-index: 100; position: relative; cursor: pointer;">
+                            </div>
+                            <div class="modal-body">
+                                <div
+                                    class="row justify-content-between align-items-end align-self-stretch h-project-auto h-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="projects-line project-line-modal">
+                                                    <img src="assets/project-line.svg" alt="" class="w-100">
+                                                </div>
+                                                <div class="projects-title-outline">
+                                                    <div class="projects-title">T0P S3CR3T</div>
+                                                    <div class="projects-year">2025 - TBA</div>
+                                                </div>
+                                                <div class="projects-quote">Better Late Than Never</div>
+                                                <div class="projects-desc">[More Info Coming Soon!]</div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2 mt-lg-4 projects-button">
+                                            <div class="col-6">
+                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
+                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
+                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
+                                                                class="w-100"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#modalSlide"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#modalSlide"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-project" id="metaverseModal" tabindex="-1" aria-labelledby="metaverseModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="metaverseModalLabel"></h5>
+                    <img src="assets/icons/close.svg" data-bs-dismiss="modal" alt="">
+                </div>
+                <div class="modal-body">
+                    <dotlottie-player src="https://lottie.host/3d1a1dda-82e4-43c4-af4f-d1beea359379/8siRHamLoo.json"
+                        background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay
+                        class="metaverse-loader"></dotlottie-player>
+                    <div class="metaverse-frame w-100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-overlay"></div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/app.js?20242"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+
+</html>

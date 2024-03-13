@@ -1,0 +1,479 @@
+@media (max-width: 1280px){
+    .container {
+        max-width: 1140px;
+    }
+    .title .sub {
+        font-size: 24px;
+    }
+    .title .text, .title-blue, .title-blue-mesh {
+        font-size: 64px;
+    }
+    .icon-box-outline {
+        padding: 48px 64px 62px 64px;
+    }
+    .icon-image {
+        margin-bottom: 16px;
+    }
+    .coc-desc {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .coc-footer div {
+        width: 200px;
+    }
+    #projects {
+        background-size: 1200px auto;
+    }
+    .modal-project .modal-dialog {
+        max-width: 900px;
+    }
+    .modal-project .modal-dialog:after {
+        width: 600px;
+        height: 400px;
+    }
+    .modal-project .modal-project-details {
+        width: 100%;
+        height: 437px;
+        padding: 32px;
+    }
+}
+@media (max-width: 1199.98px){
+    .container {
+        max-width: 960px;
+    }
+    #hero {
+        min-height: 800px;
+    }
+    .hero-circle {
+        width: 490px;
+        height: 320px;
+    }
+    .sub-headline {
+        font-size: 48px;
+    }
+    .headline {
+        font-size: 80px;
+    }
+    .icon-box-outline {
+        padding: 48px 48px 64px;
+    }
+    .icon-image {
+        margin-bottom: 8px;
+        width: 120px;
+    }
+    .icon-desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #about {
+        padding: 140px 0 40px 0;
+    }
+    .about-box {
+        margin-top: 0px;
+    }
+    .coc-desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #projects {
+        background-size: 1000px auto;
+    }
+    .coc-footer div {
+        width: 150px;
+        margin-top: -18px;
+    }
+    .title-blue-mesh {
+        z-index: 2;
+    }
+    .modal-project .modal-dialog {
+        max-width: 800px;
+    }
+    .modal-project .modal-dialog:after {
+        width: 550px;
+        height: 350px;
+    }
+    .modal-project .modal-project-details {
+        width: 100%;
+        height: 400px;
+        padding: 0px 24px 24px 24px;
+    }
+    .frame-roadmap {
+        height: 450px;
+    }
+}
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    .logo-mobile {
+        display: inline-block !important;
+        width: 94px;
+    }
+    .headline {
+        font-size: 72px;
+    }
+    .nav-overlay.active {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(16, 17, 17, 0.64);
+        z-index: 2;
+    }
+    .nav-menu-content {
+        background: #101111;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        padding: 40px 24px;
+        transition: all .5s;
+        margin-top: -800px;
+    }
+    .nav-menu-content ul {
+        padding-left: 0;
+    }
+    .nav-menu-content > ul > li {
+        display: block;
+        margin-bottom: 48px;
+        padding: 0;
+    }
+    .nav-menu-content ul li a {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        display: block;
+    }
+    .nav-menu-content.active {
+        margin-top: 0;
+    }
+    .nav-menu-content > ul > li.nav-menu-content-dropdown:hover > a img {
+        transform: rotate(0deg);
+    }
+    .nav-menu-content > ul > li.nav-menu-content-dropdown.show > a img {
+        transform: rotate(-180deg);
+    }
+    .nav-menu-content ul li.nav-menu-content-dropdown > ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        min-height: 0;
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        opacity: 1;
+        transition: all .3s;
+        box-shadow: none;
+    }
+    .nav-menu-content ul li.nav-menu-content-dropdown > ul.show {
+        min-height: 0;
+        max-height: 1000px;
+        margin-top: 12px;
+    }
+    .nav-menu-content ul li.nav-menu-content-dropdown > ul li {
+        padding: 24px 0;
+    }
+    .icon-box {
+        margin-bottom: -40px;
+    }
+    .icon-box-outline {
+        top: 50%;
+        left: 50%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .icon-image {
+        width: 360px;
+        margin-bottom: 0;
+    }
+    .icon-desc {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .title {
+        text-align: center;
+        display: block;
+    }
+    .about-arrow {
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    #tokenomics {
+        background: none;
+    }
+    .tokenomics-outline {
+        padding: 24px 0;
+    }
+    .tokenomics-mobile-title {
+        padding: 24px;
+        align-items: center;
+        justify-content: center;
+        background: url("../assets/tokenomics.png") no-repeat top center;
+        background-size: cover;
+        min-height: 400px;
+    }
+    #tokenomics:after {
+        content: none;
+    }
+    #projects {
+        background-size: 900px auto;
+    }
+    .title-blue-mesh {
+        margin-top: 64px;
+    }
+    .frame-roadmap {
+        height: 400px;
+    }
+    .sticker {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+@media (max-width: 800.98px) {
+    .container {
+        max-width: 700px;
+    }
+    body {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .headline {
+        font-size: 64px;
+    }
+    #projects {
+        background-size: 700px auto;
+        margin: 0px auto 100px auto;
+    }
+    .modal-project .modal-dialog {
+        max-width: 600px;
+    }
+    .modal-project .modal-dialog:after {
+        width: 450px;
+        height: 250px;
+    }
+    .modal-project .modal-project-details {
+        width: 100%;
+        height: 300px;
+        padding: 0px 20px 20px 20px;
+    }
+}
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 24px;
+    }
+    .nav-menu-logo {
+        width: 48px;
+    }
+    .hero-text {
+        margin-top: -60px;
+    }
+    .sub-headline {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .headline {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+    .desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .hero-circle {
+        margin-top: 64px;
+        width: 100%;
+        height: 204px;
+    }
+    .cta, .cta-second {
+        display: block;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    #icon {
+        margin: 32px auto 64px auto;
+    }
+    .icon-box-outline {
+        padding: 48px 40px 40px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 95%;
+    }
+    .icon-image {
+        width: 140px;
+    }
+    .icon-desc {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .title .sub {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .title .text, .title-blue, .title-blue-mesh {
+        font-size: 32px;
+    }
+    .title:after {
+        width: 214px;
+        height: 60px;
+        filter: blur(33px);
+    }
+    .about-arrow {
+        width: 140px;
+        margin-top: -24px;
+        margin-bottom: -24px;
+    }
+    .about-box {
+        padding: 16px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    #about:after {
+        content: none;
+    }
+    #coc {
+        padding-top: 24px;
+        padding-bottom: 96px;
+        background: url("../assets/token-bg.png") no-repeat top center;
+        background-size: contain;
+    }
+    .coc-box {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+    }
+    .coc-body-mobile {
+        margin-bottom: 24px;
+        padding: 12px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, rgba(161, 42, 254, 0.30) 0%, rgba(161, 42, 254, 0.00) 93.66%);
+        backdrop-filter: blur(12px);
+    }
+    .coc-image {
+        width: 120px;
+    }
+    .coc-desc {
+        text-align: left;
+    }
+    .coc-footer div {
+        width: 120px;
+        margin-top: -14px;
+        margin-left: -26px;
+    }
+    .tokenomics-mobile-title {
+        min-height: 218px;
+    }
+    .tokenomics-content {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #tokenomics {
+        margin: 96px auto;
+    }
+    .title-blue-mesh:after {
+        width: 214px;
+        height: 60px;
+        filter: blur(33px);
+    }
+    #projects {
+        background: url("../assets/projects-bg.png") no-repeat bottom right;
+        background-size: auto 400px;
+        margin: 0px auto 60px auto;
+    }
+    .projects-box {
+        flex-direction: column;
+        gap: 24px;
+        padding: 12px;
+    }
+    .projects-content {
+        width: 100%;
+    }
+    .projects-image {
+        width: 100%;
+    }
+    .projects-button a {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .projects-button a span {
+        width: 20px;
+    }
+    .footer-line {
+        filter: drop-shadow(0px 0px 42px #29FFA5) drop-shadow(0px 0px 40px rgba(41, 255, 165, 0.80)) drop-shadow(0px 0px 14px #29FFA5);
+    }
+    .img-footer {
+        width: 94px;
+        padding-bottom: 12px;
+    }
+    .text-copy {
+        padding-bottom: 16px;
+    }
+    .footer-icons a {
+        margin: 0 8px;
+    }
+    #footer {
+        margin: 0 auto 48px auto;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        margin: 0 4px;
+        width: 24px;
+    }
+    .modal-project .modal-dialog {
+        max-width: auto;
+    }
+    .modal-project .modal-dialog:after {
+        width: 600px;
+        height: 400px;
+    }
+    .modal-project .modal-content {
+        padding: 16px;
+    }
+    .modal-project .modal-project-details {
+        width: 100%;
+        height: 540px;
+        background-size: contain !important;
+        background-position: top center !important;
+        padding: 8px;
+    }
+    .modal-project .modal-content {
+        padding: 12px;
+    }
+    .h-project-auto {
+        height: auto !important;
+        margin-top: 170px;
+    }
+    .email-box input {
+        padding: 14px 12px;
+    }
+    .email-box .cta {
+        padding: 14px 20px;
+    }
+    .frame-roadmap {
+        height: 200px;
+    }
+}
+@media (max-width: 360px) {
+    .container {
+        max-width: 320px;
+    }
+    .modal-project .modal-project-details {
+        height: 520px;
+    }
+    .h-project-auto {
+        margin-top: 130px;
+    }
+}
