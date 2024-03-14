@@ -14,173 +14,144 @@
     <link rel="stylesheet" href="css/responsive.css?20242901" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/animate.css?20242901" />
+ 
 </head>
 
 <body>
-    <section id="hero">
-        <header class="main_header ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 px-xl-0 px-lg-3 px-0">
-                        <!-- justify-content-between -->
-                        <div class="nav-menu d-flex align-items-center">
-                            <div class="nav-menu-logo">
-                                <a href="index.html">
-                                    <img src="assets/logo.png" alt="" class="w-100">
-                                </a>
-                            </div>
-                            <div class="nav-menu-content ms-auto me-0">
-                                <ul>
-                                    <li>
-                                        <a href="https://cocktailbar20.medium.com/the-cocktailbar-litepaper-63a26b5406f5"
-                                            target="_blank" rel="noopener noreferrer">Litepaper</a>
-
-                                    </li>
-                                    <li class="d-lg-none d-block text-end py-0">
-                                        <img src="assets/icons/close.svg" class="toggle-close" alt="">
-                                    </li>
-                                    <li class="d-lg-none d-block text-center py-0">
-                                        <a href="index.html" class="logo-mobile">
-                                            <img src="assets/logo.png" alt="" data-aos="fade-up" class="w-100">
-                                        </a>
-                                    </li>
-                                    <li class="nav-menu-content-dropdown">
-                                        <a href="#"><span>Charts/Analytics</span> <img
-                                                src="assets/icons/chevron-down.svg" alt=""></a>
-                                        <ul>
-                                            <li><a href="https://www.coingecko.com/en/coins/cocktailbar"><img
-                                                        src="assets/nav/coingecko.png"> <span>CoinGecko</span></a></li>
-                                            <li><a href="https://coinmarketcap.com/currencies/cocktail-bar"><img
-                                                        src="assets/nav/cmc.png"><span>Coin Market</span></a></li>
-                                            <li><a
-                                                    href="https://www.dextools.io/app/en/ether/pair-explorer/0x39fb7af42ef12d92a0d577ca44cd54a0f24c4915"><img
-                                                        src="assets/nav/dextools.png"> <span>Dextools</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-menu-content-dropdown">
-                                        <a href="#">$COC Token <img src="assets/icons/chevron-down.svg" alt=""></a>
-                                        <ul>
-                                            <li><a
-                                                    href="https://etherscan.io/token/0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf"><img
-                                                        src="assets/nav/etherscan-logo.png"> Etherscan</a></li>
-                                            <li><a
-                                                    href="https://app.uniswap.org/swap?outputCurrency=0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf"><img
-                                                        src="assets/nav/uniswap.png"> Uniswap</a></li>
-                                            <li><a href="https://app.1inch.io/#/1/simple/swap/ETH/COC"><img
-                                                        src="assets/nav/1inch_token.png">1Inch</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-menu-content-dropdown">
-                                        <a href="#">Social <img src="assets/icons/chevron-down.svg" alt=""></a>
-                                        <ul>
-                                            <li><a href="ww.x.com/cocktailbarCOC"><img src="assets/nav/x.png"> X</a>
-                                            </li>
-                                            <li><a href="https://t.me/cocktailbar_chat"><img
-                                                        src="assets/nav/telegram.png">
-                                                    Telegram</a></li>
-                                            <li><a href="https://discord.gg/fvmpMb3nCY"><img
-                                                        src="assets/nav/discord.png">
-                                                    Discord</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="btn_audio">
-                                <div class="btn__a" id="player-container">
-                                    <img src="assets/icons/play.svg" id="play-pause" class="play" alt="">
-                                </div>
-                                <audio id="track">
-                                    <source src="https://cldup.com/qR72ozoaiQ.mp3" type="audio/mpeg" />
-                                </audio>
-                            </div>
-                            <img src="assets/icons/toggle.svg" class="toggle d-lg-none" alt="">
+    <header class="main_header ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 px-xl-0 px-lg-3 px-0">
+                    <!-- justify-content-between -->
+                    <div id="navbar" class="nav-menu d-flex align-items-center">
+                        <div class="nav-menu-logo">
+                            <a href="index.html">
+                                <img src="assets/logo.png" alt="" class="w-100">
+                            </a>
                         </div>
+                        <div class="nav-menu-content ms-0 me-auto">
+                            <ul>
+                                <li>
+                                    <a href="#" class="stakeButton">Stake</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Dashboard</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-menu-content ms-auto me-0">
+                            <li class="d-lg-none d-block text-end py-0">
+                                <img src="assets/icons/close.svg" class="toggle-close" alt="">
+                            </li>
+                            <ul>
+                              
+                                <li class="mobile_menu_list">
+                                    <a href="#" class="stakeButton">Stake</a>
+                                </li>
+                               
+                                    <li class="mobile_menu_list">
+                                    <a href="#">My Dashboard</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://cocktailbar20.medium.com/the-cocktailbar-litepaper-63a26b5406f5"
+                                        target="_blank" rel="noopener noreferrer">Litepaper</a>
+
+                                </li>
+                               
+                                <li class="d-lg-none d-block text-center py-0">
+                                    <a href="index.html" class="logo-mobile">
+                                        <img src="assets/logo.png" alt="" data-aos="fade-up" class="w-100">
+                                    </a>
+                                </li>
+                               
+                                <li class="nav-menu-content-dropdown">
+                                    <a href="#">$COC Token <img src="assets/icons/chevron-down.svg" alt=""></a>
+                                    <ul>
+                                        <li class="dropdown-section-title">buy</li>
+                                        <br>
+                                        <li><a href="https://app.uniswap.org/swap?outputCurrency=0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf">
+                                                <img src="assets/nav/uniswap.png" alt=""> Uniswap</a></li>
+                                        <li><a href="https://app.1inch.io/#/1/simple/swap/ETH/COC">
+                                            <img src="assets/nav/1inch_token.png" alt="">1Inch</a></li>
+                                        <li class="dropdown-section-title">on-chain metrics</li>
+                                        <li><a href="https://etherscan.io/token/0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf">
+                                            <img src="assets/nav/etherscan-logo.png" alt=""> Etherscan</a></li>
+                                        <li class="dropdown-section-title">chart and analytics</li>
+                                        <li><a href="https://www.coingecko.com/en/coins/cocktailbar">
+                                            <img src="assets/nav/coingecko.png" alt=""> <span>CoinGecko</span></a></li>
+                                        <li><a href="https://coinmarketcap.com/currencies/cocktail-bar">
+                                            <img src="assets/nav/cmc.png" alt=""><span>Coin Market</span></a></li>
+                                        <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0x39fb7af42ef12d92a0d577ca44cd54a0f24c4915">
+                                            <img src="assets/nav/dextools.png" alt=""> <span>Dextools</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-menu-content-dropdown">
+                                    <a href="#">Social <img src="assets/icons/chevron-down.svg" alt=""></a>
+                                    <ul>
+                                        <li><a href="https://www.x.com/cocktailbarCOC"><img src="assets/nav/x.png"> X</a>
+                                        </li>
+                                        <li><a href="https://t.me/cocktailbar_chat"><img
+                                                    src="assets/nav/telegram.png">
+                                                Telegram</a></li>
+                                        <li><a href="https://discord.gg/fvmpMb3nCY"><img
+                                                    src="assets/nav/discord.png">
+                                                Discord</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="btn_audio" style="position: absolute; top: 5px; right: 5px;">
+                            <div class="btn__a" id="player-container">
+                                <img src="assets/icons/play.svg" id="play-pause" class="play" alt="" style="width: 90%;">
+                            </div>
+                            <audio id="track">
+                                <source src="https://cldup.com/qR72ozoaiQ.mp3" type="audio/mpeg" />
+                            </audio>
+                        </div>
+                        <img src="assets/icons/toggle.svg" class="toggle d-lg-none" alt="">
                     </div>
                 </div>
             </div>
-        </header>
-        <header class="main_header bg_2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 px-xl-0 px-lg-3 px-0">
-                        <!-- justify-content-between -->
-                        <div class="nav-menu d-flex align-items-center">
-                            <div class="nav-menu-logo">
-                                <a href="index.html">
-                                    <img src="assets/logo.png" alt="" class="w-100">
-                                </a>
-                            </div>
-                            <div class="nav-menu-content ms-auto me-0">
-                                <ul>
-                                    <li>
-                                        <a href="https://cocktailbar20.medium.com/the-cocktailbar-litepaper-63a26b5406f5"
-                                            target="_blank" rel="noopener noreferrer">Litepaper</a>
+        </div>
+        <div id="popupContainer">
+        <svg version="1.1" id="popup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="100px" viewBox="0 0 200 100" enable-background="new 0 0 200 100" xml:space="preserve">
+  <defs>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300,500,700');   
+          text {
+                font-weight: 700;
+            }
+          
+          .userTeamName{
+            font-weight: 400;
+          }
+        </style>
+    </defs>
+<g id="userBg">
+	<rect id="bg_3_" x="9.1" y="9.5" fill="#CCCCCC" width="50" height="15"/>
+	<text transform="matrix(1 0 0 1 19.66 20.5068)" fill="#4C4C4C" font-family="Roboto Mono" font-size="11">Coming</text>
+</g>
+<g id="teamBg">
+	<rect id="bg_2_" x="9.1" y="58.5" fill="#CCCCCC" width="40" height="12"/>
+	<text transform="matrix(1 0 0 1 17.0604 67.4224)" fill="#4C4C4C" font-family="Roboto Mono" font-size="10">Soon</text>
+</g>
+<g id="usernameBg">
+	<rect id="bg_1_" x="9.1" y="26.5" fill="#A8D500" width="189.9" height="30"/>
+	<text class="userTeamName" transform="matrix(1 0 0 1 47.7927 46.7603)" font-family="Roboto Mono" font-size="18">$COC STAKING</text>
+</g>
+<g id="teamnameBg">
+	<rect id="bg" x="9.1" y="72.5" fill="#A8D500" width="100" height="20"/>
+	<text class="userTeamName" transform="matrix(1 0 0 1 25.4569 86.5915)" font-family="Roboto Mono" font-size="10">Stake to earn</text>
+</g>
+<polygon id="border" fill="#A8D500" points="5.7,1 1,1 1,16.9 6,20.6 6,99 7,99 7,1 "/>
+</svg>
+</div>
 
-                                    </li>
-                                    <li class="d-lg-none d-block text-end py-0">
-                                        <img src="assets/icons/close.svg" class="toggle-close" alt="">
-                                    </li>
-                                    <li class="d-lg-none d-block text-center py-0">
-                                        <a href="index.html" class="logo-mobile">
-                                            <img src="assets/logo.png" alt="" data-aos="fade-up" class="w-100">
-                                        </a>
-                                    </li>
-                                    <li class="nav-menu-content-dropdown">
-                                        <a href="#"><span>Charts/Analytics</span> <img
-                                                src="assets/icons/chevron-down.svg" alt=""></a>
-                                        <ul>
-                                            <li><a href="https://www.coingecko.com/en/coins/cocktailbar"><img
-                                                        src="assets/nav/coingecko.png"> <span>CoinGecko</span></a></li>
-                                            <li><a href="https://coinmarketcap.com/currencies/cocktail-bar"><img
-                                                        src="assets/nav/cmc.png"><span>Coin Market</span></a></li>
-                                            <li><a
-                                                    href="https://www.dextools.io/app/en/ether/pair-explorer/0x39fb7af42ef12d92a0d577ca44cd54a0f24c4915"><img
-                                                        src="assets/nav/dextools.png"> <span>Dextools</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-menu-content-dropdown">
-                                        <a href="#">$COC Token <img src="assets/icons/chevron-down.svg" alt=""></a>
-                                        <ul>
-                                            <li><a
-                                                    href="https://etherscan.io/token/0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf"><img
-                                                        src="assets/nav/etherscan-logo.png"> Etherscan</a></li>
-                                            <li><a
-                                                    href="https://app.uniswap.org/swap?outputCurrency=0x22b6c31c2beb8f2d0d5373146eed41ab9ede3caf"><img
-                                                        src="assets/nav/uniswap.png"> Uniswap</a></li>
-                                            <li><a href="https://app.1inch.io/#/1/simple/swap/ETH/COC"><img
-                                                        src="assets/nav/1inch_token.png">1Inch</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-menu-content-dropdown">
-                                        <a href="#">Social <img src="assets/icons/chevron-down.svg" alt=""></a>
-                                        <ul>
-                                            <li><a href="ww.x.com/cocktailbarCOC"><img src="assets/nav/x.png"> X</a>
-                                            </li>
-                                            <li><a href="https://t.me/cocktailbar_chat"><img
-                                                        src="assets/nav/telegram.png">
-                                                    Telegram</a></li>
-                                            <li><a href="https://discord.gg/fvmpMb3nCY"><img
-                                                        src="assets/nav/discord.png">
-                                                    Discord</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="btn_audio">
-                                <div class="btn__a" id="player-container">
-                                    <img src="assets/icons/play.svg" id="play-pause" class="play" alt="">
-                                </div>
-                                <audio id="track">
-                                    <source src="https://cldup.com/qR72ozoaiQ.mp3" type="audio/mpeg" />
-                                </audio>
-                            </div>
-                            <img src="assets/icons/toggle.svg" class="toggle d-lg-none" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
+    </header>
+    <section id="hero" class="pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -208,17 +179,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="sticker">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="offset-3 col-6 offset-lg-5 col-lg-2 px-4 text-center">
-                            <img src="assets/sticker.png" alt="" class="w-100 on-off delay-1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+     
     </section>
     <section id="icon">
         <div class="container">
@@ -441,7 +402,7 @@
                                         LAUNCH DEXTOOLS
                                     </a>
                                     <a href="javascript:void(0);" onclick="uniSwap()" class="cta-second me-0">
-                                        <span class="cta-second-text">UNISWAP</span>
+                                        <span class="cta-second-text">BUY</span>
                                         <span class="cta-icon"><img src="assets/icons/chevron-right.svg" alt=""
                                                 class="w-100"></span>
                                     </a>
@@ -776,28 +737,47 @@
                 <div class="col-12 text-center">
                     <div class="title-blue-mesh neon-blue delay-2">ROADMAP</div>
 
-                    <ul>
-                        <li>
-                            Launch MetaHunt WhitePaper
-                        </li>
-                        <li>
-                            Launch CocktailBar Website
-                        </li>
-                        <li>
-                            Reignite Telegram
-                        </li>
-                        <li>
-                            Reactivate twitter
-                        </li>
-                        <li>
-                            Raiding commences
-                        </li>
-                    </ul>
+                    <div class="row roadmap-columns">
+                        <div class="col-md-3">
+                            <ul>
+                                <li style="text-decoration: line-through; border-bottom: 1px dashed #f17b05; color: #ffffff;">Reignite Telegram</li>
+                                <li style="text-decoration: line-through; border-bottom: 1px dashed #f17b05; color: #ffffff;">Launch MetaHunt Whitepaper</li>
+                                <li style="text-decoration: line-through; border-bottom: 1px dashed #f17b05; color: #ffffff;">Launch the Cocktailbar Website</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Raiding commences</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Reactivate Twitter</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li style="border-bottom: 1px dashed #f17b05;">Metahunt Alpha Demo</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Showcase Game Assets</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Showcasing Weapons through concept art</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Revealing 3D Models of Weapons</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Share Textures for Weapon Skins</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li style="border-bottom: 1px dashed #f17b05;">Showcase Playable Character customization</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Introducing 3D Configurator for weapon Skins/characters</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Introducing the MetaHunt lore</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Introducing the Official MetaHunt gaming environment</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Game Modes: Fortune Frenzy, Token Takedown, and Skins Skirmish</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li style="border-bottom: 1px dashed #f17b05;">Showcasing the Skins/characters Marketplace</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">COC Staking for MHNT goes live</li>
+                                <li style="border-bottom: 1px dashed #f17b05;">Official Game launch of MetaHunt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe title="CadGL 3D Configurator"  src="https://app.cadgl.com/iframe/bfda176a-2255-4413-ac01-116c911419f0" class="w-75 mx-auto mb-4 rounded frame-roadmap d-block" frameborder="3" allowfullscreen="allowfullscreen"></iframe>
 
-                    <iframe title="CadGL 3D Configurator"
-                        src="https://app.cadgl.com/iframe/bfda176a-2255-4413-ac01-116c911419f0"
-                        class="w-100 mb-4 rounded frame-roadmap" frameborder="0"
-                        allowfullscreen="allowfullscreen"></iframe>
                 </div>
             </div>
         </div>
@@ -908,12 +888,12 @@
                                         <div class="row mt-2 mt-lg-4 projects-button">
                                             <div class="col-6">
                                                 <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
+                                                    <a href="https://mhnt.gitbook.io/metahunt-wp/" target="_blank">READ WHITEPAPER</a>
                                                 </div>
                                             </div>
                                             <div class="col-6 text-end">
                                                 <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
+                                                    <a href="" target="_blank">WEBSITE SOON
                                                         <span><img src="assets/icons/chevron-right.svg" alt=""
                                                                 class="w-100"></span></a>
                                                 </div>
@@ -952,20 +932,7 @@
                                                     crypto rewards. <br />[More Info Coming Soon!]</div>
                                             </div>
                                         </div>
-                                        <div class="row mt-2 mt-lg-4 projects-button">
-                                            <div class="col-6">
-                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 text-end">
-                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
-                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
-                                                                class="w-100"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -997,20 +964,7 @@
                                                     its own 3D viewer and editor. <br />[More Info Coming Soon!]</div>
                                             </div>
                                         </div>
-                                        <div class="row mt-2 mt-lg-4 projects-button">
-                                            <div class="col-6">
-                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 text-end">
-                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
-                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
-                                                                class="w-100"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -1044,20 +998,7 @@
                                                     tradeable, and expandable NFTs.<br />[More Info Coming Soon!]</div>
                                             </div>
                                         </div>
-                                        <div class="row mt-2 mt-lg-4 projects-button">
-                                            <div class="col-6">
-                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 text-end">
-                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
-                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
-                                                                class="w-100"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -1091,20 +1032,7 @@
                                                     gaming.<br />[More Info Coming Soon!]</div>
                                             </div>
                                         </div>
-                                        <div class="row mt-2 mt-lg-4 projects-button">
-                                            <div class="col-6">
-                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 text-end">
-                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
-                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
-                                                                class="w-100"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -1135,20 +1063,7 @@
                                                 <div class="projects-desc">[More Info Coming Soon!]</div>
                                             </div>
                                         </div>
-                                        <div class="row mt-2 mt-lg-4 projects-button">
-                                            <div class="col-6">
-                                                <div class="projects-button read-whitepaper d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">READ WHITEPAPER</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 text-end">
-                                                <div class="projects-button visit-website d-inline-flex pt-3 pt-lg-0">
-                                                    <a href="https://medium.com" target="_blank">VISIT WEBSITE
-                                                        <span><img src="assets/icons/chevron-right.svg" alt=""
-                                                                class="w-100"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -1186,8 +1101,34 @@
             </div>
         </div>
     </div>
-    <div class="nav-overlay"></div>
+   
+<!-- onload popup -->
+
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <img src="assets/111.jpg" alt="Welcome Back Patron">
+        <a class="scifi-button" href="#0">Enter</a>
+    </div>
+  </div>
+
+<script>
+ setTimeout(function() {
+    // Display the modal after 200ms
+    document.getElementById('welcomeModal').style.display = 'block';
+  }, 200);
+
+document.querySelector('.scifi-button').addEventListener('click', function() {
+  document.getElementById('welcomeModal').style.display = 'none';
+  document.querySelector('#player-container').click();
+  document.querySelector('#play-pause').click();
+  
+});
+
+</script>
+    <!-- onload popup -->
+     <div class="nav-overlay"></div> 
     <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/easing.js"></script>

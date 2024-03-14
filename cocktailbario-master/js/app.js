@@ -157,13 +157,90 @@ $(window).scroll(function () {
   var sticky = $('.main_header'), scroll = $(window).scrollTop();
   if (scroll >= headerHeight) {
     sticky.addClass('fixed');
-    $("#hero").css("padding-top",headerHeight+'px')
+    $("#hero").css("padding-top", headerHeight + 'px')
   }
   else {
     sticky.removeClass('fixed');
-    $("#hero").css("padding-top",'0px')
+    $("#hero").css("padding-top", '0px')
   }
 });
+document.addEventListener('DOMContentLoaded', function () {
+  // Define the animation sequence for the popup using GSAP
+  function Animation(popup) {
+    const tl = gsap.timeline({ paused: true });
+
+    tl.from(popup.border, {
+      duration: 0.2,
+      scaleY: 0,
+      opacity: 0,
+      transformOrigin: "top"
+    })
+      .from(popup.bg.user, {
+        duration: 0.2,
+        scaleX: 0,
+        opacity: 0,
+        transformOrigin: "left center"
+      })
+      .from(popup.bg.username, {
+        duration: 0.2,
+        scaleX: 0,
+        opacity: 0,
+        transformOrigin: "left center"
+      })
+      .from(popup.bg.team, {
+        duration: 0.2,
+        scaleX: 0,
+        opacity: 0,
+        transformOrigin: "left center"
+      })
+      .from(popup.bg.teamname, {
+        duration: 0.2,
+        scaleX: 0,
+        opacity: 0,
+        transformOrigin: "left center"
+      });
+
+    return tl;
+  }
+
+  var data = {
+    popup: {
+      popupId: "#popupContainer", // Ensure this matches your HTML
+      border: "#border",
+      bg: {
+        user: "#userBg",
+        username: "#usernameBg",
+        team: "#teamBg",
+        teamname: "#teamnameBg"
+      }
+    }
+  };
+
+  var popup = document.querySelector(data.popup.popupId);
+  var navbar = document.getElementById('navbar'); // Ensure this matches your HTML
+  var animation = Animation(data.popup);
+
+  // Attach click event listener to the "Stake" button
+  // var stakeButton = document.getElementsByClassName('stakeButton'); // Ensure this matches your HTML
+  $('.stakeButton').on('click', function (e) {
+    e.preventDefault();
+
+    var navbarRect = navbar.getBoundingClientRect();
+    var leftOffset = navbarRect.left + navbar.offsetWidth / 10; // Positioning popup 1/4th from the left of the navbar
+
+    // Position the popup dynamically based on the navbar's position
+    popup.style.position = 'absolute';
+    popup.style.top = `${navbarRect.bottom + window.scrollY + 5}px`; // 5px below the navbar
+    popup.style.left = `${leftOffset}px`; // 1/4th from the left of the navbar
+
+    // Ensure the popup is initially hidden, then display it
+    gsap.set(popup, { display: 'block', autoAlpha: 1 });
+    animation.restart(); // Restart the animation to display the popup
+  });
+});
+
+// Additionally, ensure your <audio> and play-pause button functionality is correctly implemented
+// if used in your project.
 
 
 // audio-play-pause

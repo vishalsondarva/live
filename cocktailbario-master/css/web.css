@@ -8,7 +8,7 @@ body {
 }
 
 section {
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -59,24 +59,29 @@ input {
 .nav-menu {
     margin-top: 12px;
 }
-
 .nav-menu-logo {
-    width: 80px;
+    width: 50px;
+    margin-top: -10px; /* Adjusting margin to center the logo vertically */
 }
 
 .nav-menu-content ul {
     list-style: none;
-    margin-bottom: 10px;
 }
+
+.nav-menu-content li {
+    margin-top: -8px;
+    line-height: 50px; /* Centering the text vertically */
+
+}
+
 
 .nav-menu-content ul li {
     display: inline-block;
     padding-left: 32px;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
     letter-spacing: -0.36px;
+    font-family: 'Lato-Black', sans-serif; /* Setting font family to Lato-Black */
 }
-
 .nav-menu-content ul li a:hover {
     text-shadow: 0px 0px 16px #16F1FF, 0px 0px 16px #16F1FF;
 }
@@ -107,7 +112,6 @@ input {
 }
 
 .nav-menu-content ul li.nav-menu-content-dropdown>ul {
-    margin-top: 14px;
     position: absolute;
     top: 100%;
     left: -10%;
@@ -118,8 +122,8 @@ input {
     z-index: 200;
     min-width: 200px;
     border-radius: 8px;
-    background: linear-gradient(180deg, rgba(244, 201, 255, 0.20) -0.28%, rgba(255, 255, 255, 0.00) 99.72%);
-    backdrop-filter: blur(12px);
+    background: rgba(16, 17, 17, 0.8); /* Adjust color and opacity as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for depth */
 }
 
 .nav-menu-content>ul>li.nav-menu-content-dropdown:hover ul {
@@ -129,14 +133,34 @@ input {
 }
 
 .nav-menu-content ul li.nav-menu-content-dropdown>ul li {
-    padding: 10px 0;
-    display: block;
+    list-style-type: none; /* Removes bullet points */
+    padding: 10px 15px; /* Adds padding to each list item */
+    font-size: 14px; /* Adjust font size as needed */
+    border-bottom: 0.5px dashed #c7c7c7;
+}
+
+.nav-menu-content ul li.nav-menu-content-dropdown>ul li.dropdown-section-title {
+    font-size: 12px; /* Smaller font size for section titles */
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #c7c7c7; /* Lighter text color for titles */
+}
+
+.nav-menu-content ul li.nav-menu-content-dropdown>ul li:last-child {
+    border-bottom: none; /* Removes border from the last item */
+}
+
+.nav-menu-content ul li.nav-menu-content-dropdown>ul li a {
+    display: flex;
+    align-items: center; /* Aligns icons with text */
+    color: #FFFFFF; /* Text color for list items */
+    text-decoration: none; /* Removes underline from links */
 }
 
 .nav-menu-content ul li.nav-menu-content-dropdown>ul li a img {
-    display: inline-block;
-    width: 24px;
-    margin-right: 8px;
+    margin-right: 8px; /* Space between icon and text */
+    width: 24px; /* Sets a fixed width for icons */
+    height: auto; /* Keeps the aspect ratio of the icons */
 }
 
 .hero-circle {
@@ -146,6 +170,12 @@ input {
     display: inline-block;
     animation: on-off 1s infinite;
     overflow: hidden;
+}
+
+#popupContainer {
+    position: absolute;
+    z-index: 99999;
+    visibility: hidden;
 }
 
 .circle-2 {
@@ -777,17 +807,18 @@ input {
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
     z-index: 999999;
-    /* transition: backdrop-filter 0.4s; */
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(90deg, rgba(21, 23, 36, 0.8), rgba(30, 22, 71, 0.75), rgba(110, 51, 144, 0.6), #4B0082);
+    background-size: cover;
+    box-shadow: inset -1px 0 3px 2px rgba(255, 255, 255, 0.06), 0 0 20px rgba(255, 255, 255, 0.05), 0 0 25px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 255, 255, 0.2);
 }
 
 .main_header.fixed {
-    position: fixed;
-    box-shadow: inset -1px 0 3px 2px rgba(255, 255, 255, 0.06), 0 0 20px rgba(255, 255, 255, 0.05),
-    0 0 25px rgba(0, 0, 0, 0.05);
+    /* position: fixed; */
 
-    backdrop-filter: blur(25px);
-    background-image: linear-gradient(90deg, rgba(18, 20, 32, 0.8), rgba(36, 27, 86, 0.75), rgba(94, 51, 144, 0.6));
+    
 
     &.bg_2 {
         top: 120px;
@@ -813,7 +844,7 @@ input {
 }
 
 .btn_audio .btn__a img {
-    width: 32px;
+    width: 26px;
     transition: all 0.5s;
     overflow: hidden;
     border-radius: 50px;
@@ -834,10 +865,11 @@ input {
     li {
         color: #f17b05;
         font-family: monospace;
-        font-size: 1.125rem;
+        font-size: 15px;
         padding-block: 0.3em;
         padding-left: 0.75em;
         font-weight: 500;
+        text-shadow: 0 0 10px #f17b05; /* Adding more glow with increased shadow size */
 
         &::marker {
             content: '>';
@@ -846,25 +878,128 @@ input {
         }
     }
 }
-
+.mobile_menu_list{
+    display: none !important;
+}
+.nav-menu-content ul{
+    margin: 0px !important;
+}
 @media (max-width: 991.98px) {
+    #popupContainer{
+        background-color: hsla(180, 3%, 6%, 0.8);
+        backdrop-filter: blur(20px);
+        padding: 1.5rem;
+    }
+    .nav-menu-logo {
+        margin-top: 0;
+    }
+    .nav-menu .toggle {
+        width: 30px;
+    }
+    .nav-menu{
+      position: relative;
+      margin-top: 8px;
+    }
+    .mobile_menu_list{
+        display: block !important;
+    }
+    #hero{
+        padding-top: 0 !important;
+    }
     .nav-menu {
         margin-bottom: 8px;
+        justify-content: space-between;
     }
 
     .btn_audio {
-        margin-left: auto;
-        margin-right: 1.5rem;
-        margin-bottom: 0;
+        margin: 0 !important;   
+        position: static !important;
     }
 
     .btn_audio .btn__a img {
-        width: 28px;
+        width: 24px;
     }
 
     #roadmap ul {
         padding-block: 1.5rem;
         padding-inline: 2.5rem;
         margin-bottom: 2.5rem;
+        li{
+            font-size: 1rem;
+        }
+    }
+    .nav-menu-content ul li.nav-menu-content-dropdown > ul.show{
+        display: flex;
+    flex-direction: column;
+    }
+    .nav-menu-content{
+        overflow-y: scroll;
+        height:95vh;
     }
 }
+/* model css */
+
+#welcomeModal{
+max-width: 600px;
+width: 90%;
+right:0;
+margin: auto;
+height: auto !important;
+top:50%;
+transform: translateY(-50%);
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  }
+  
+  .scifi-button {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    line-height: 1em;
+    text-transform: uppercase;
+    background: rgba(6, 33, 60, 0.8);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 0px;
+    border-radius:0;
+    overflow:hidden;
+    transition:all 0.6s cubic-bezier(0.05, 3, 1, 1) 0s;
+  }
+  .scifi-button:after,
+  .scifi-button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #49839900;
+    width: 10px;
+    top:0;
+    bottom:0;
+    transition:all 0.6s cubic-bezier(0.05, 3, 1, 1) 0s;
+  }
+  
+  .scifi-button:before {
+    border-right: 0;
+    margin-right: 5px;
+    left:0;
+  }
+  
+  .scifi-button:after {
+    border-left: 0;
+    margin-left: 5px;
+    right:0;
+  }
+  
+  .scifi-button:hover {
+    background: rgb(6 33 60)
+  }
+  
+  .scifi-button:hover:after,
+  .scifi-button:hover:before {
+    border-color: #1ae3de #498399;
+  }
+  
