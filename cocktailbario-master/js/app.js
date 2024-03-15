@@ -164,6 +164,7 @@ $(window).scroll(function () {
     $("#hero").css("padding-top", '0px')
   }
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   // Define the animation sequence for the popup using GSAP
   function Animation(popup) {
@@ -236,11 +237,26 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ensure the popup is initially hidden, then display it
     gsap.set(popup, { display: 'block', autoAlpha: 1 });
     animation.restart(); // Restart the animation to display the popup
+
+    $("#popupContainer").delay(5000).hide(0);
+
   });
+
+  $(window).click(function (ev) {
+    if (!$(ev.target).closest(".stakeButton").length) {
+      $('#popupContainer').css('display', 'none');
+    }
+  });
+
+  
+
+ 
+
 });
 
 // Additionally, ensure your <audio> and play-pause button functionality is correctly implemented
 // if used in your project.
+
 
 
 // audio-play-pause

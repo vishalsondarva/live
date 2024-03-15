@@ -124,8 +124,7 @@
         z-index: 2;
     }
     .nav-menu-content {
-        background: #101111;
-        z-index: 3;
+        z-index: -2;
         position: fixed;
         top: 0;
         left: 0;
@@ -134,7 +133,14 @@
         padding: 40px 24px;
         transition: all .5s;
         margin-top: -800px;
+        pointer-events: none;
     }
+    .nav-menu-content.active {
+        background: #101111;
+        pointer-events: all;
+        z-index: 3;
+    }
+        bacolo
     .nav-menu-content ul {
         padding-left: 0;
     }
