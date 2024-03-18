@@ -1,0 +1,125 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-break: break-word
+}
+
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+
+html {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    font-size: 16px
+}
+
+html body {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Project-Section START */
+.project-section {
+    width: 100%;
+    min-width: var(--tab-container);
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 150px;
+    margin-top: 1rem;
+
+
+    --tab-container: 1200px;
+    --tab-width: calc(1200px / 3);
+    --tab-height: 56px;
+}
+
+.animation-module {
+    width: 100%;
+    height: fit-content;
+}
+
+.animation-module .module-shape {
+    background-color: rgb(48.32, 162.99, 227.37);
+
+    .tabs_wrap {
+        position: relative;
+        max-width: var(--tab-container);
+        margin-inline: auto;
+    }
+}
+
+
+.project-section .tab {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: -0.75px;
+        left: 0;
+        z-index: 1;
+        background-image: url(assets/img/union-18.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top center;
+        width: calc(100% / 3);
+        height: calc(var(--tab-height) + 30px);
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+}
+
+/* Style the buttons inside the tab */
+.project-section .tab .tablinks {
+    font-family: "Bebas Neue", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffffcc;
+    border: none;
+    background-color: transparent;
+    white-space: nowrap;
+    transform: translate(0);
+    position: relative;
+    z-index: 2;
+    padding-top: 0.15em;
+    width: var(--tab-width);
+    height: var(--tab-height);
+    outline: none;
+    transition: color 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+
+/* Create an active/current tablink class */
+.project-section .tab .tablinks.active {
+    color: #000;
+    transition: color 0.4s 0.1s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.project-section .tablinks.active:nth-child(2)~.shape {
+    left: calc(var(--tab-width));
+}
+
+.project-section .tablinks.active:nth-child(3)~.shape {
+    left: calc(var(--tab-width) * 2);
+}
